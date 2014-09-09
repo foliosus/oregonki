@@ -11,3 +11,5 @@ gem 'ri_cal', '~> 0.8.8'
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
+
+gem 'pry-byebug'

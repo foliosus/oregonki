@@ -1,0 +1,174 @@
+---
+:bend:
+  :monday:
+  - :description: Ki and Ki-Aikido class
+    :time: 3:15 pm
+    :duration: 75
+    :location: COCC
+  - :description: Ki and Ki-Aikido class
+    :time: 5:30 pm
+    :duration: 90
+    :location: Dojo
+  :wednesday:
+  - :description: Ki and Ki-Aikido class
+    :time: 3:15 pm
+    :duration: 75
+    :location: COCC
+  - :description: Ki and Ki-Aikido class
+    :time: 5:30 pm
+    :duration: 90
+    :location: Dojo
+  :saturday:
+    :description: Children's Ki and Ki-Aikido class
+    :time: 10 am
+    :location: Dojo
+
+:corvallis:
+  :tuesday:
+  - :description: Ki class
+    :time: 7:00 pm
+  - :description: Ki-Aikido class
+    :time: 8:00 pm
+  :wednesday:
+    :description: Beginning children's Aikido (5-8)
+    :time: 5:30 pm
+  :thursday:
+  - :description: Beginning teen's Aikido (9-15)
+    :time: 5:45 pm
+  - :description: Ki class
+    :time: 7:00 pm
+  - :description: Ki-Aikido class
+    :time: 8:00 pm
+  :saturday:
+  - :description: Advanced class (kids &amp; adults)
+    :time: 8:30 am
+  - :description: Intermediate children's Aikido
+    :time: 9:30 am
+  - :description: Intermediate beginner's Aikido
+    :time: 10:30 am
+
+:eugene:
+  :monday:
+  - :description: Introductory children's Aikido
+    :time: 4:30 pm
+    :duration: 30
+  - :description: Beginning children's Aikido
+    :time: 5:00 pm
+    :duration: 45
+  - :description: Aikido 9-14 years old
+    :time: 5:55 pm
+    :duration: 55
+  - :description: Ki class
+    :time: 7:00 pm
+    :duration: 55
+  - :description: Ki-Aikido
+    :time: 8:00 pm
+    :duration: 55
+  :wednesday:
+  - :description: Introductory children's Aikido
+    :time: 5:00 5:30 pm
+    :duration: 30
+  - :description: Parent-child class (5-8 years old + parent)
+    :time: 5:30 pm
+    :duration: 45
+  - :description: Personal Kiatsu
+    :time: 7:20 pm
+    :duration: 120
+  :thursday:
+  - :description: Ki and Ki-Aikido class
+    :time: 7:00 pm
+    :duration: 90
+  :friday:
+  - :description: Breathing and meditation
+    :time: 12:15 pm
+    :duration: 45
+
+:hillsboro:
+  :wednesday:
+  - :description: Children's Aikido
+    :time: 6:30 pm
+  - :description: Ki class
+    :time: 6:30 pm
+  - :description: Ki-Aikido
+    :time: 7:30 pm
+
+:kiatsu:
+  :monday:
+  - :description: Kiatsu class
+    :time: 7:00 pm
+    :duration: 150
+  :tuesday:
+  - :description: Kiatsu class
+    :time: 6:30 pm
+    :duration: 150
+
+:reed:
+  :monday:
+  - :description: Beginner's Ki class
+    :time: 7:00 pm
+  - :description: Beginner's Ki-Aikido
+    :time: 8:00 pm
+  :wednesday:
+  - :description: Intermediate Ki class
+    :time: 7:00 pm
+  - :description: Intermediate Ki-Aikido
+    :time: 8:00 pm
+
+:salem:
+  :tuesday:
+  - :description: Personal Kiatsu
+    :time: 6:30 pm
+    :duration: 135
+
+:se_portland:
+  :tuesday:
+  - :description: Ki class
+    :time: 7:00 pm
+  - :description: Ki-Aikido
+    :time: 8:10 pm
+  :wednesday:
+  - :description: Beginning children's Aikido
+    :time: 6:00 pm
+  - :description: Intermediate children's Aikido
+    :time: 7:00 pm
+  :thursday:
+  - :description: Ki class
+    :time: 7:00 pm
+  - :description: Ki-Aikido
+    :time: 8:10 pm
+  :saturday:
+  - :description: Beginning children's Aikido
+    :time: 9:30 am
+  - :description: Intermediate children's Aikido
+    :time: 10:40 am
+
+:tigard:
+  :monday:
+  - :description: Ki class
+    :time: 6:30 pm
+  - :description: Ki-Aikido
+    :time: 7:30 pm
+  :tuesday:
+  - :description: Ki class
+    :time: 7:00 pm
+  - :description: Ki-Aikido
+    :time: 8:15 pm
+  :wednesday:
+  - :description: Beginning children's Aikido
+    :time: 6:00 pm
+  - :description: Intermediate children's Aikido
+    :time: 7:00 pm
+  :thursday:
+  - :description: Ki class
+    :time: 7:00 pm
+    :duration: 60
+  - :description: Ki-Aikido
+    :time: 8:15 pm
+    :duration: 60
+  :saturday:
+  - :description: Beginning children's Aikido
+    :time: 9:15 am
+  - :description: Intermediate/beginner children's Aikido
+    :time: 10:30 am
+  - :description: Advanced children's Aikido
+    :time: 11:45 am

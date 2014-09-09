@@ -1,3 +1,5 @@
+require 'pry'
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -50,20 +52,31 @@ helpers do
     end
   end
 
-  # Output a dojo schedule table, given a hash of courses
-  def dojo_schedule(schedule)
+  # Parameters
+  # course[:time] is "6:30 pm" or anything parsable by Time.
+  # course[:duration] is the duration in minutes. Defaults to 60 minutes (1 hour).
+  def course_time(course)
+    start = Time.parse(course[:time])
+    finish = start + (course[:duration] || 60) * 60
+    "#{start.strftime('%l:%M').strip}&ndash;#{finish.strftime('%l:%M %P').strip}"
+  end
+
+  # Output a dojo schedule table, given a dojo name, eg :tigard
+  def dojo_schedule(dojo)
+    schedule = data.schedule[dojo]
+
     odd = true
     has_location = false
     rows = ''
     content_tag :table, cellspacing: 0 do
       [:monday, :tuesday, :wednesday, :thursday, :friday, :saturday, :sunday].each do |day|
-        next unless schedule.keys.include?(day)
+        next unless schedule[day]
         courses = schedule[day].is_a?(Array) ? schedule[day] : [schedule[day]]
         courses.each do |course|
           rows += content_tag(:tr, class: (odd ? 'odd' : 'even')) do
             row = content_tag(:td, course == courses.first ? day.to_s.capitalize : '') +
                   content_tag(:td, course[:description]) +
-                  content_tag(:td, course[:time])
+                  content_tag(:td, course_time(course))
             if course[:location]
               has_location = true
               row += content_tag(:td, course[:location])
