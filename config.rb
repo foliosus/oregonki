@@ -171,13 +171,18 @@ helpers do
       filename = "galleries/#{prefix}_#{number}.jpg"
       thumbnail = thumbnail_name(filename)
       generate_thumbnail!(filename, thumbnail) unless File.exists?("#{source_dir}/#{images_dir}/#{thumbnail}")
-      image_markup(name, "/#{images_dir}/#{filename}", thumbnail)
+      begin
+        image_markup(name, "/#{images_dir}/#{filename}", thumbnail)
+      rescue => e
+        binding.pry
+      end
     end
   end
 
   def gallery(source, prefix = nil)
     images = data.photos[source]
     return content_tag(:p, 'No images found') unless images
+    puts "Generating #{source} gallery"
 
     content_for :javascript do
       '<script type="text/javascript" src="/lightbox/prototype.js"></script>
@@ -197,7 +202,6 @@ helpers do
       output += content_tag(:div, class: 'gallery_row') do
         group.collect do |name|
           index += 1
-          puts index
           gallery_image(name, index, prefix)
         end.join("\n")
       end
