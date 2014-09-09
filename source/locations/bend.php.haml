@@ -1,0 +1,38 @@
+---
+title: Bend dojo
+meta_title: Bend dojo
+meta_description: Oregon Ki Society dojo in Bend that offers Ki training, Aikido, Kiatsu&reg; and children's classes.
+---
+
+.image
+  = image_tag 'bend_gym_dojo.jpg', alt: 'Photo of COCC'
+  %address
+    <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1080+SE+Centennial+St,+Bend,+Oregon+97702&amp;sll=44.038923,-121.293697&amp;sspn=0.053001,0.083342&amp;ie=UTF8&amp;&amp;z=17" title="Map of the Bend dojo">1080 SE Centennial St., Unit 2<br />Bend, Oregon 97702</a>
+  %p (541) 350-7887
+  %address
+    <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=2600+NW+College+Way,+Bend+OR+97701&amp;ie=UTF8&amp;om=1&amp;ll=44.069827,-121.334724&amp;spn=0.115197,0.143166&amp;z=13&amp;iwloc=addr" title="Map of the Bend dojo">Central Oregon Community College<br />2600 NW College Way<br />Bend, Oregon 97701</a>
+
+%h2 Course schedule
+
+= dojo_schedule({monday: [{description: 'Ki and Ki-Aikido class', time: '3:15&ndash;4:30 pm', location: 'COCC'},
+                          {description: 'Ki and Ki-Aikido class', time: '5:30&ndash;7:00 pm', location: 'Dojo'}],
+                 wednesday: [{description: 'Ki and Ki-Aikido class', time: '3:15&ndash;4:30 pm', location: 'COCC'},
+                             {description: 'Ki and Ki-Aikido class', time: '5:30&ndash;7:00 pm', location: 'Dojo'}],
+                 saturday: {description: "Children's Ki and Ki-Aikido class", time: '10&ndash;11 am', location: 'Dojo'}})
+
+%h2 Instructors
+
+%ul
+  %li Brad Welker, Assistant Lecturer, Chuden, Shinshin Toitsu Aikido 3rd Dan, teaching for over 10 years.
+
+.image.centerpiece
+  = image_tag 'bend_instructors.jpg', alt: 'Bend dojo instructors', title: 'Bend dojo instructors'
+  %p Brad Welker sensei
+
+%h2 Upcoming events
+= php_include('events.php')
+<?php print dojo_events("Bend"); ?>
+
+- content_for :secondary_content do
+  %h2 About our programs
+  %p The Oregon Ki Society has programs in <a href="/ki/index.html" title="Mind and body coordination">Ki training</a>, <a href="/aikido/index.html" title="Aikido with mind and body coordinated">Aikido</a> and <a href="/kiatsu/index.html" title="Pressing with Ki, for personal health and healing">Kiatsu</a>.  We also have a <a href="/kids/index.html" title="Aikido training for kids">children's program</a> to teach Aikido to kids under the age of 15.

@@ -1,0 +1,14 @@
+---
+title: Upcoming events
+meta_title: Upcoming events
+meta_description: Upcoming events for the Oregon Ki Society, including tournaments, seminars and other special events.
+---
+
+= php_include('events.php')
+<?php print full_events(); ?>
+
+- content_for :secondary_content do
+  %h2 Who can attend?
+  %p In most cases, Ki Society events are open to currently enrolled students.  In some cases, immediate family are also welcome; please ask at your dojo for details.
+  %p To see only the events affecting a particular dojo, please <a href="/locations/index.html" title="List of OKS dojos">see our locations pages</a>.
+  %p We maintain galleries of <a href="/photos/index.html" title="Gallery list">photos from recent events</a>.

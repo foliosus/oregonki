@@ -1,0 +1,47 @@
+---
+title: The Personal Kiatsu&reg; School
+meta_title: The Personal Kiatsu&reg; School schedule and map
+meta_description: The only Kiatsu&reg; school outside of Japan, in Tigard (SW Portland).
+---
+
+.image
+  = image_tag 'kiatsu_dojo.jpg', alt: 'Photo of Personal Kiatsu&reg; School'
+  %address
+    <a href="http://maps.google.com/maps?f=q&hl=en&q=12700+SW+68th+Parkway,+Tigard,+OR&sll=37.0625,-95.677071&sspn=63.472213,62.841797&ie=UTF8&z=16&iwloc=cent&om=1" title="Map of the Personal Kiatsu School">12700 SW 68th Parkway<br />Tigard, Oregon 97223</a>
+  %p (503) 624-6501
+
+%h2 Course schedule
+
+= dojo_schedule({monday: [{description: 'Kiatsu class', time: '7:00&ndash;9:30 pm'}],
+                 tuesday: [{description: 'Kiatsu class', time: '6:30&ndash;9:00 pm'}]})
+
+%p Periodically there are 4-week introductory courses held on Wednesday evenings. Please check our calendar for details.
+
+%p Please see the <a href="/kiatsu/index.html" title="Find out more about Kiatsu&reg;">Personal Kiatsu School pages</a> for more information about Kiatsu. If you are interested in visiting a class, simply call ahead to make arrangements; all are welcome.
+
+%h2 Instructors
+
+%ul.long
+  %li Calvin Tabata Sensei, Chief Instructor of Personal Kiatsu School, Kiatsu Lecturer, Chief Instructor of the Northwest Ki Federation, Ki Lecturer, Okuden, Shinshin Toitsu Aikido 8th Dan, teaching in the Northwest since 1970.  Tabata Sensei has learned Ki Principles and Kiatsu directly from Founder Koichi Tohei his entire life including training in the Kiatsu Clinic and School at  Ki Society HQ in Japan.  In cooperation with Koichi Tohei Sensei, he established the Personal Kiatsu School in 1993.
+  %li Terry Copperman, Director of the Personal Kiatsu School, Kiatsu Associate Lecturer, Ki Lecturer, OKS Senior Advisor, Joden, Shinshin Toitsu Aikido 5th Dan, teaching for over 25 years.  Copperman Sensei has learned Kiatsu directly from Koichi Tohei Sensei at several private seminars, in addition to decades long Kiatsu training with Tabata Sensei.
+  %li Brenda Tam, Kiatsu Associate Lecturer, Chief Instructor of Oregon Ki Society Childrens Program, Ki Lecturer, OKS Senior Advisor, Joden, Shinshin Toitsu Aikido 7th Dan, teaching for over 30 years.
+  %li Louis Sloss, Kiatsu Associate Lecturer, Chief Instructor of Adult Programs, Ki Lecturer, OKS Secretary, Okuden, Shinshin Toitsu Aikido 7th Dan, teaching for over 30 years.
+  %li Bob Hart, Kiatsu Associate Lecturer, Ki Lecturer, OKS President, Joden, Shinshin Toitsu Aikido 6th Dan, teaching for over 30 years.
+  %li Jon Maxson, Kiatsu Associate Lecturer, Associate Lecturer, OKS Treasurer, Joden, Shinshin Toitsu Aikido 4th Dan, teaching for over 20 years.
+  %li Bob Jones, Kiatsu Assistant Lecturer, Associate Lecturer, Joden, Shinshin Toitsu Aikido 4th Dan, teaching for over 20 years.
+  %li Donna Gerten, Kiatsu Assistant Lecturer, Assistant Lecturer, Chuden, Shinshin Toitsu Aikido 1st Dan, teaching for over 15 years.
+  %li Scott MacHaffie, Kiatsu Assistant Lecturer, Assistant Lecturer, Chuden, Shinshin Toitsu Aikido 3rd Dan, teaching for over 10 years.
+  %li Dennis Lewandowski, Kiatsu Assistant Lecturer, Assistant Lecturer, Shoden, Shinshin Toitsu Aikido 1st Dan, teaching for over 10 years.
+
+.image.centerpiece
+  = image_tag 'kiatsu_instructors.jpg', alt: 'Personal Kiatsu School instructors'
+  %p Left to right, back row: Donna Gerten, Scott McHaffie, Bob Jones, Dennis Lewandowski, Jon Maxson
+  %p Left to right, front row: Louis Sloss, Brenda Tam, Calvin Tabata, Terry Copperman, Bob Hart
+
+%h2 Upcoming events
+= php_include('events.php')
+<?php print dojo_events("Kiatsu"); ?>
+
+- content_for :secondary_content do
+  %h2 About the training
+  %p Find out more about <a href="/kiatsu/index.html" title="What is Kiatsu&reg;?">Kiatsu training</a> and the <a href="/kiatsu/school.html" title="Learn more about the school">Personal Kiatsu School</a>.

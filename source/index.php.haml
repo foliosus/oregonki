@@ -1,0 +1,65 @@
+---
+title: Welcome to the Oregon Ki Society
+meta_description: The Oregon Ki Society teaches Ki principles, Kiatsu&reg; (pressing with Ki) and Shin Shin Toitsu Aikido (Aikido with mind and body coordinated) throughout Oregon and the Pacific Northwest.
+---
+
+%blockquote.motto
+  %h2 Our Motto
+  %p &#8220;Let us have a Universal Mind that loves and protects all creation and helps all things grow and develop.
+  %p To unify mind and body and become one with the Universe is the ultimate purpose of our study.&#8221;
+  %p &mdash; Koichi Tohei Sensei
+
+= image_tag('ki_symbol.jpg', alt: "Japanese character for Ki, calligraphy by Koichi Tohei sensei", title: "Japanese character for Ki, calligraphy by Koichi Tohei sensei")
+
+%p The Oregon Ki Society (OKS) is a nonprofit educational service organization established in 1974 to spread <a href="/ki/what_is_ki.html" title="Learn more about Ki training">Ki principles</a>, <a href="/kiatsu/index.html" title="Learn more about Kiatsu training">Kiatsu&reg;</a>, and <a href="/aikido/index.html" title="Learn more about Aikido training">Shin Shin Toitsu Aikido</a> as taught by Master Koichi Tohei. The OKS provides a traditional Japanese dojo training environment for students of all ages and abilities. The programs are led by <a href="/instructors.html" title="Meet our instructors">highly skilled instructors</a> with 10 to 40 years teaching experience. All OKS instructors are certified by Ki Society HQ and receive ongoing instruction to stay current and maintain certification.
+
+%p The OKS's <a href="/kiatsu/index.html" title="Learn more about the Kiatsu school">Personal Kiatsu School</a> teaches Master Tohei's methods for promoting physical and mental health. Created with the cooperation of Master Tohei, the Personal Kiatsu School is fully accredited by the Ki Society Headquarters in Japan.
+
+%p <a href="/koichi_tohei_sensei.html" title="Who is Koichi Tohei sensei?">Master Koichi Tohei</a> is the founder of the Ki Society and his Ki principles are practiced worldwide.  His son, <a href="/shinichi_tohei_sensei.html" title="Who is Shinichi Tohei sensei?">Shinichi Tohei Sensei</a>, now presides at the World Headquarters in Japan and travels overseas to teach. The Oregon Ki Society is affiliated with both the Northwest Ki Federation, and Ki Society HQ.
+
+%p <strong>News:</strong> It is with deep regret that we mourn the passing of <a href="/tabata_remembrance.html">Seichi Tabata sensei</a>.
+
+- content_for :secondary_content do
+  %ul#highlights
+    %li#faq
+      %h2 Frequently asked questions
+      %ul
+        %li <a href="/koichi_tohei_sensei.html" title="Find out the answer">Who is Tohei sensei?</a>
+        %li <a href="/instructors.html" title="Find out the answer">Who are the OKS instructors?</a>
+        %li <a href="/ki/index.html" title="Find out the answer">What is Ki?</a>
+        %li <a href="/aikido/index.html" title="Find out the answer">What is Aikido?</a>
+        %li <a href="/kiatsu/index.html" title="Find out the answer">What is Kiatsu&reg;?</a>
+        %li <a href="/locations/index.html" title="Find out the answer">Where are the OKS dojos?</a>
+        %li <a href="/kids/index.html" title="Find out the answer">Can kids train too?</a>
+        %li <a href="/fees.html" title="Find out the answer">How much does it cost?</a>
+    %li.programs
+      %h2 Our programs
+      %ul
+        %li <a href="/ki/index.html" title="Learn more about Ki and Ki training">Ki training</a>
+        %li <a href="/aikido/index.html" title="Find out about Ki-Aikido">Aikido training</a>
+        %li <a href="/kiatsu/index.html" title="What is Kiatsu&reg;, and how does it work?">Kiatsu&reg; for self-healing</a>
+        %li <a href="/kids/index.html" title="Ki and Ki-Aikido training for younger students">Children's program</a>
+      %h2 Help us fundraise
+      %ul
+        %li <a href="/locations/se_portland.php" title="Dojo construction fund for SE Portland">We're building a dojo in SE Portland!</a>
+    %li#locations
+      %h2 Our locations
+      %ul
+        %li <a href="/locations/tigard.php" title="Northwest Ki Federation headquarters">SW Portland (Tigard)</a>
+        %li <a href="/locations/se_portland.php" title="OKS dojo in inner SE Portland">SE Portland</a>
+        %li <a href="/locations/hillsboro.php" title="OKS dojo at the RoseSprings Center for the Healing Arts">Hillsboro</a>
+        %li <a href="/locations/salem.php" title="OKS dojo in Salem">Salem</a>
+        %li <a href="/locations/eugene.php" title="OKS dojo in Eugene">Eugene</a>
+        %li <a href="/locations/corvallis.php" title="OKS dojo in Corvallis">Corvallis</a>
+        %li <a href="/locations/bend.php" title="OKS dojo in Bend">Bend</a>
+    %li#events
+      %h2 Upcoming events
+      = php_include('events.php')
+      %ul
+        <?php print upcoming_events(3); ?>
+
+  = image_tag('index_splash.jpg', alt: 'Jonage, performed by Michael Boyer and Robert Jacobs. Photo by Brent Miller.', title: 'Jonage, performed by Michael Boyer and Robert Jacobs. Photo by Brent Miller.')
+
+  #amazon_banner
+    = link_to 'http://www.amazon.com/?_encoding=UTF8&amp;tag=orekisoc-20', target: '_blank' do
+      = image_tag('amazon_banner.gif', alt: 'Amazon affiliate program banner', title: 'Shop here to support the Oregon Ki Society')

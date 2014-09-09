@@ -1,0 +1,38 @@
+---
+title: Hillsboro dojo
+meta_title: Hillsboro dojo
+meta_description: Oregon Ki Society satellite dojo in Hillsboro that offers Ki training, Aikido and children's classes.
+---
+
+.image
+  = image_tag 'hillsboro_dojo.jpg', alt: 'Photo of Hillsboro dojo'
+  %address
+    <a href="http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=5215+NE+Elam+Young+Parkway,+Hillsboro,+OR+97214&sll=37.0625,-95.677068&sspn=63.728771,76.025391&ie=UTF8&z=17&iwloc=addr&om=1" title="Map of the Hillsboro dojo">RoseSprings Center for the Healing Arts<br />5215 NE Elam Young Parkway, Suite A<br />Hillsboro, OR 97124-6498</a>
+  %p (971) 570-8348
+
+%h2 Course schedule
+
+= dojo_schedule({wednesday: [{description: "Children's Aikido", time: '6:30&ndash;7:30 pm'},
+                             {description: 'Ki class', time: '6:30&ndash;7:30 pm'},
+                             {description: 'Ki-Aikido', time: '7:30&ndash;8:30 pm'}]})
+
+%p The Hillsboro dojo operates as a satellite of the <a href="tigard.php" title="Find out more about the Tigard dojo">Tigard dojo</a>.
+
+<h2>Instructors</h2>
+
+%ul
+  %li Paul Rebollido, Assistant Lecturer, Shoden, Shinshin Toitsu Aikido 3rd Dan, teaching for over 10 years.
+  %li Eugene Rebollido, Assistant Lecturer, Shoden, Shinshin Toitsu Aikido 3rd Dan, teaching for over 10 years.
+  %li George Rebollido, Assistant Lecturer, Shoden, Shinshin Toitsu Aikido 2nd Dan, teaching for over 10 years.
+
+.image.centerpiece
+  = image_tag 'hillsboro_instructors.jpg', alt: 'Hillsboro dojo instructors'
+  %p Left to right: Eugene Rebollido sensei, Paul Rebollido sensei, George Rebollido sensei
+
+%h2 Upcoming events
+= php_include('events.php')
+<?php print dojo_events("Hillsboro"); ?>
+
+- content_for :secondary_content do
+  %h2 About the training
+  %p The Hillsboro dojo offers <a href="/ki/index.html" title="More on Ki training">Ki training</a>, <a href="/aikido/index.html" title="More information about Aikido">Aikido</a> and a <a href="/kids/index.html" title="Aikido and Ki training for kids">children's program</a>.

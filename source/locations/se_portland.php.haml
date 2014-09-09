@@ -1,0 +1,68 @@
+---
+title: SE Portland dojo
+meta_title: SE Portland dojo
+meta_description: Oregon Ki Society dojo in SE Portland (Milwaukie &amp; Powell) that offers Ki training, Aikido and children's classes.
+---
+
+.image
+  = image_tag 'se_portland_dojo.jpg', alt: 'Photo of SE Portland dojo'
+  %address
+    <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=2705+SE+Milwaukie,+Portland,+97202&amp;sll=45.430503,-122.748592&amp;sspn=0.014034,0.015643&amp;ie=UTF8&amp;z=16&amp;om=1" title="Map of the SE Portland dojo">2705 SE Milwaukie Ave. #102,<br />Portland, Oregon 97202</a>
+  %p (503) 232-2298
+
+%h2 Course schedule
+
+= dojo_schedule({tuesday: [{description: 'Ki class', time: '7:00&ndash;8:00 pm'},
+                          {description: 'Ki-Aikido', time: '8:10&ndash;9:10 pm'}],
+                 wednesday: [{description: "Beginning children's Aikido", time: '6:00&ndash;7:00 pm'},
+                             {description: "Intermediate children's Aikido", time: '7:00&ndash;8:00 pm'}],
+                 thursday: [{description: 'Ki class', time: '7:00&ndash;8:00 pm'},
+                            {description: 'Ki-Aikido', time: '8:10&ndash;9:10 pm'}],
+                 saturday: [{description: "Beginning children's Aikido", time: '9:30&ndash;10:30 am'},
+                            {description: "Intermediate children's Aikido", time: '10:40&ndash;11:40 am'}]})
+
+= php_include('events.php')
+
+<?php if (isWinter()) { ?>
+%p Is it snowing?  We close if PCC closes.  Closures are listed on <a href="http://www.pcc.edu/" rel="nofollow" title="Portland Community College">the PCC homepage</a>.
+<?php }; ?>
+
+%h2 Help us build a new dojo in NE Portland!
+
+%p With more than $150,000 already raised, we have met our first goal of purchasing land for a new dojo in Portland's East side. We have bought a property on <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=NE+76th+%26+Sandy,+Portland,+OR&amp;sll=45.495796,-122.631492&amp;sspn=0.014274,0.018346&amp;ie=UTF8&amp;hq=&amp;hnear=NE+Sandy+Blvd+%26+NE+76th+Ave,+Portland,+Multnomah,+Oregon+97213&amp;ll=45.550207,-122.584525&amp;spn=0.00126,0.001147&amp;t=h&amp;z=20">the northeast corner of NE 76<sup>th</sup> and Sandy</a>. We are now working towards our second goal of raising enough money to build our new dojo, which will be an additional $300,000.
+
+%p To donate, please send a check made out to the Oregon Ki Society to:
+
+%address
+  P.O. Box 2143<br />
+  Lake Oswego, OR 97035
+
+%p Please note &quot;SE dojo building fund&quot; on the check so that we can put your valuable donation in to the appropriate fund. Since the Oregon Ki Society is a 501(c)(3) organization, all donations are tax-deductible. All donors will be issued a receipt for their tax records.
+
+%h3 Thank you!
+
+%p Even the smallest donations help, and all assistance is appreciated. From all of the students in the southeast dojo and the entire Oregon Ki Society, <strong>Thank you!</strong>
+
+%h2 Instructors
+
+%ul
+  %li Jon Maxson, Associate Lecturer, Kiatsu Associate Lecturer, OKS Treasurer, Joden, Shinshin Toitsu Aikido 5th Dan, teaching for over 20 years.
+  %li Marc Hess, Associate Lecturer, Shoden, Shinshin Toitsu Aikdo 5th Dan, teaching for over 20 years.
+  %li Erik Gorka, Assistant Lecturer, Chuden, Shinshin Toitsu Aikdo 4th Dan, teaching for over 15 years.
+  %li John Young, Assistant Lecturer, Chuden, Shinshin Toitsu Aikdo 3rd Dan, teaching for over 15 years.
+  %li Randy Crockett, Assistant Lecturer, Chuden, Shinshin Toitsu Aikido 3rd Dan, teaching for over 15 years.
+  %li Dan Peterson, Assistant Lecturer, Shoden, Shinshin Toitsu Aikido 2nd Dan, teaching for over 10 years.
+  %li Brent Miller, Jokyu, Shinshin Toitsu Aikido 1st Dan, teaching for over 5 years.
+
+.image.centerpiece
+  = image_tag 'se_portland_instructors.jpg', alt: 'SE Portland dojo instructors', title: 'SE Portland dojo instructors'
+  %p From left to right, front row: Karl Starkweather, Marc Hess, Jon Maxson, John Young
+  %p From left to right, standing: Erik Gorka, Randy Crockett, Brent Miller, Dan Peterson
+
+%h2 Upcoming events
+<?php print dojo_events("SE"); ?>
+
+- content_for :secondary_content do
+  %h2 About the training
+  %p The SE dojo offers <a href="/ki/index.html" title="More on Ki training">Ki training</a>, <a href="/aikido/index.html" title="More information about Aikido">Aikido</a>, and <a href="/kids/index.html" title="Find out about the Children's Program">Children's Program classes</a>.
+  %p There are several other dojos in the Portland metropolitan area: <a href="tigard.php" title="OKS Headquarters: Takushinkan dojo">Tigard</a>, <a href="hillsboro.php" title="County fairgrounds">Hillsboro</a> and <a href="reed_college.php" title="SE 33rd and Woodstock">Reed College</a>.

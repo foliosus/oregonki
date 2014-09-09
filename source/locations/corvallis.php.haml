@@ -1,0 +1,54 @@
+---
+title: Corvallis dojo
+meta_title: Corvallis dojo
+meta_description: Oregon Ki Society dojo in Corvallis (on NW 2nd) that offers Ki training, Aikido, Kiatsu&reg; and children's classes.
+---
+
+.image
+  = image_tag 'corvallis_dojo.jpg', alt: 'Photo of Corvallis dojo'
+  %address
+    <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;time=&amp;date=&amp;ttype=&amp;q=535+NW+4th+Street,+Corvallis,+OR&amp;sll=45.496072,-122.631481&amp;sspn=0.007024,0.00928&amp;ie=UTF8&amp;z=17&amp;iwloc=addr&amp;om=1" title="Map of the Corvallis dojo">535 NW 4th St.,<br />Corvallis, Oregon 97330</a>
+  %p (541) 757-2746
+  %p Send mail to P.O. Box 2495<br />Corvallis, OR 97339
+
+%h2 Course schedule
+
+= dojo_schedule({tuesday: [{description: 'Ki class', time: '7:00&ndash;8:00 pm'},
+                          {description: 'Ki-Aikido class', time: '8:00&ndash;9:00 pm'}],
+                 wednesday: {description: 'Beginning children\'s Aikido (5-8)', time: '5:30&ndash;6:30 pm'},
+                 thursday: [{description: 'Beginning teen\'s Aikido (9-15)', time: '5:45&ndash;6:45 pm'},
+                            {description: 'Ki class', time: '7:00&ndash;8:00 pm'},
+                            {description: 'Ki-Aikido class', time: '8:00&ndash;9:00 pm'}],
+                 saturday: [{description: 'Advanced class (kids &amp; adults)', time: '8:30&ndash;9:30 am'},
+                            {description: "Intermediate children's Aikido", time: '9:30&ndash;10:30 am'},
+                            {description: "Intermediate beginner's Aikido", time: '10:30&ndash;11:30 am'}]})
+
+%p To schedule a <strong>free introductory lesson</strong> please call (541) 757-2746, or <a href="mailto:corvallisdojo@gmail.com">email us</a>.
+
+= php_include('events.php')
+
+<?php if (isWinter()) { ?>
+%p Is it snowing?  We close if school district 509J closes.  Closures are listed on <a href="http://www.csd509j.net/emergency_info/more-info.html" rel="nofollow" title="Corvallis School District 509J">the 509J homepage</a>. You can also subscribe to <a href="http://www.flashalert.net/news.html?id=500" rel="nofollow" title="Receive closure notices in your e-mail">get e-mail closure alerts</a>.
+<?php }; ?>
+
+%h2 Instructors
+
+%ul
+  %li Jake Nice, Associate Lecturer, OKS Senior Advisor, Chuden, Shinshin Toitsu Aikido 5th Dan, teaching for over 25 years
+  %li Patricia Nice, Associate Lecturer, OKS Senior Advisor, Chuden, Shinshin Toitsu Aikido 5th Dan, teaching for over 25 years
+  %li Bill Peterson, Associate Lecturer, Joden, Shinshin Toitsu Aikido 5th Dan, teaching for over 25 years
+  %li Bill Porter, Assistant Lecturer, Shoden, Shinshin Toitsu Aikido 2nd Dan, teaching for over 15 years
+  %li Fred Pfund, Assistant Lecturer, Shoden, Shinshin Toitsu Aikido 1st Dan, teaching for over 10 years
+  %li Greg Felder, Jokyu, Shinshin Toitsu Aikido 1st Dan, teaching for over 5 years
+
+.image.centerpiece
+  = image_tag('corvallis_instructors.jpg', alt: 'Corvallis dojo instructors')
+  %p From left to right, front row: Bill Peterson sensei, Patricia Nice sensei, Bill Porter sensei, Fred Pfund sensei
+  %p From left to right, standing: Greg Felder sensei, Marty Jurrens sensei, Jake Nice sensei, Gertie Gerson sensei
+
+%h2 Upcoming events
+<?php print dojo_events("Corvallis"); ?>
+
+- content_for :secondary_content do
+  %h2 About the training
+  %p The Corvallis dojo offers <a href="/ki/index.html" title="More on Ki training">Ki training</a>, <a href="/aikido/index.html" title="More information about Aikido">Aikido</a>, <a href="/kiatsu/index.html" title="Find out about Kiatsu&reg;">Kiatsu&reg; training</a> and a <a href="/kids/index.html" title="Aikido and Ki training for kids">children's program</a>.

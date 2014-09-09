@@ -1,0 +1,36 @@
+---
+title: Salem dojo
+meta_title: Salem dojo
+meta_description: Oregon Ki Society dojo in Salem (20th and Nebraska NE) that offers Ki training, Aikido and Kiatsu&reg;.
+---
+
+.image
+  = image_tag 'salem_dojo.jpg', alt: 'Photo of Salem dojo'
+  %address
+    <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=20th+and+Nebraska+St.+NE,+97301&amp;sll=44.943402,-123.010998&amp;sspn=0.014155,0.015643&amp;ie=UTF8&amp;ll=44.945118,-123.011041&amp;spn=0.014155,0.015643&amp;z=16&amp;iwloc=addr&amp;om=1" title="Map of the Salem dojo">20th and Nebraska St. NE,<br />Salem, Oregon 97301</a>
+  %p (503) 508-5354
+  %p <a href="mailto:oks@wvi.com" title="Contact the Salem dojo">e-mail</a>
+
+%p The Salem dojo offers training in <a href="/ki/index.html" title="Ki training">Ki development</a> and <a href="/kiatsu/index.html" title="Personal Kiatsu for health and fitness">Kiatsu&reg;</a>.
+
+%p The dojo is located in the Englewood Elementary School cafeteria. Enter under the stairwell facing Nebraska Street.
+
+%h2 Course schedule
+= dojo_schedule({tuesday: [{description: "Personal Kiatsu", time: '6:30&ndash;8:45 pm'}]})
+
+%h2 Instructors
+
+%ul
+  %li Bob Jones, Associate Lecturer, Kiatsu Assistant Lecturer, Joden, Aikido 5th Dan, teaching for over 25 years.
+
+.image.centerpiece
+  = image_tag 'salem_instructors.jpg', alt: 'Salem dojo instructors', title: 'Salem dojo instructors'
+  %p Bob Jones sensei
+
+%h2 Upcoming events
+= php_include('events.php')
+<?php print dojo_events("Salem"); ?>
+
+- content_for :secondary_content do
+  %h2 About the training
+  %p The Salem dojo offers <a href="/ki/index.html" title="More on Ki training">Ki training</a>, <a href="/aikido/index.html" title="More information about Aikido">Aikido</a>, and <a href="/kiatsu/index.html" title="Find out about Kiatsu&reg;">Kiatsu&reg; training</a>.

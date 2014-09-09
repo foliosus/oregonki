@@ -1,0 +1,63 @@
+---
+title: Tigard (SW Portland) dojo
+meta_title: Tigard (SW Portland) dojo
+meta_description: Oregon Ki Society dojo in SW Portland (Tigard) that offers Ki training, Aikido, Kiatsu&reg; and children's classes.
+---
+
+.image
+  = image_tag 'tigard_dojo.jpg', alt: 'Photo of Takushinkan dojo by Brent Miller.', title: 'Photo of Takushinkan dojo by Brent Miller.'
+  %address
+    <a href="http://g.co/maps/srpnp" title="Map of the Takushinkan dojo. The main entrance is on 68th, not 67th as shown by Google.">12700 SW 68th Ave.,<br />Tigard, Oregon 97223</a>
+  %p (503) 684-0185
+  %p Send mail to P.O. Box 2143<br />Lake Oswego, OR 97035
+
+%h2 Course schedule
+
+= dojo_schedule({monday: [{description: 'Ki class', time: '6:30&ndash;7:30 pm'},
+                          {description: 'Ki-Aikido', time: '7:30&ndash;8:30 pm'}],
+                 tuesday: [{description: 'Ki class', time: '7:00&ndash;8:00 pm'},
+                           {description: 'Ki-Aikido', time: '8:15&ndash;9:15 pm'}],
+                 wednesday: [{description: "Beginning children's Aikido", time: '6:00&ndash;7:00 pm'},
+                             {description: "Intermediate children's Aikido", time: '7:00&ndash;8:00 pm'}],
+                 thursday: [{description: 'Ki class', time: '7:00&ndash;8:00 pm'},
+                            {description: 'Ki-Aikido', time: '8:15&ndash;9:15 pm'}],
+                 saturday: [{description: "Beginning children's Aikido", time: '9:15&ndash;10:15 am'},
+                            {description: "Intermediate/beginner children's Aikido", time: '10:30&ndash;11:30 am'},
+                            {description: "Advanced children's Aikido", time: '11:45 am&ndash;12:45 pm'}]})
+
+= php_include('events.php')
+
+<?php if (isWinter()) { ?>
+%p Is it snowing?  We close if PCC closes.  Closures are listed on <a href="http://www.pcc.edu/" rel="nofollow" title="Portland Community College">the PCC homepage</a>. You can also subscribe to <a href="http://flashalert.net/news.html?id=40" rel="nofollow" title="Receive closure notices in your e-mail">get e-mail closure alerts</a>.
+<?php }; ?>
+
+.image.centerpiece
+  = image_tag 'tigard_sign.jpg', alt: 'Takushinkan (frontier) dojo sign.  Calligraphy by Tohei sensei.', title: 'Takushinkan (frontier) dojo sign.  Calligraphy by Tohei sensei.', style: 'border: none'
+  %p The Tigard dojo was named the Takushinkan dojo, meaning &#8220;Frontier dojo&#8221;, by <a href="/koichi_tohei_sensei.html" title="Read a brief bio of Tohei sensei">Tohei sensei</a>, whose calligraphy adorns this sign.
+
+%h2 Instructors
+
+%ul
+  %li Bob Hart, Ki Lecturer, Kiatsu Associate Lecturer, OKS President, Okuden, Aikido 7th Dan, teaching for over 30 years.
+  %li Karen Andress, Associate Lecturer, Chuden, Aikido 5th Dan, teaching for over 20 years.
+  %li Steve Andress, Associate Lecturer, Shoden, Aikido 5th Dan, teaching for over 20 years.
+  %li Ken Week, Associate Lecturer, Chuden, Aikido 4th Dan, teaching for over 20 years.
+  %li Shirley McCartney, Associate Lecturer, Chuden, Aikido 4th Dan, teaching for over 15 years.
+  %li Scott MacHaffie, Assistant Lecturer, Kiatsu Assistant Lecturer, Chuden, Aikido 3rd Dan, teaching for over 10 years.
+  %li Mark Hutchinson, Assistant Lecturer, Chuden, Aikido 3rd Dan, teaching for over 10 years.
+  %li Eugene Rebollido, Assistant Lecturer, Shoden, Aikido 3rd Dan, teaching for over 10 years.
+  %li Scott Hutchinson, Assistant Lecturer, Shoden, Aikido 2nd Dan, teaching for over 5 years.
+  %li John Wade, Jokyu, Aikido 1st Dan, teaching for over 5 years.
+  %li Shri Godbole, Jokyu, Aikido 1st Dan, teaching for over 5 years.
+
+.image.centerpiece
+  = image_tag 'tigard_instructors.jpg', alt: 'Takushinkan dojo instructors', title: 'Takushinkan dojo instructors'
+  %p From left to right, front row: Shri Godbole sensei, Eugene Rebollido sensei, Bob Hart sensei, Brenda Tam sensei
+  %p From left to right, second row: Scott Hutchinson sensei, Steve Chase sensei, Steve Andress sensei, Ken Week sensei
+
+%h2 Upcoming events
+<?php print dojo_events("SW"); ?>
+
+- content_for :secondary_content do
+  %h2 Nearby dojos
+  %p There are several other dojos in the Portland metropolitan area: <a href="se_portland.php" title="Intersection of SE Powell and Milwaukie">SE Portland</a>, <a href="hillsboro.php" title="County fairgrounds">Hillsboro</a> and <a href="reed_college.php" title="SE 33rd and Woodstock">Reed College</a>.

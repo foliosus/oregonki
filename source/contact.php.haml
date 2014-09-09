@@ -1,0 +1,189 @@
+---
+title: Contact the Oregon Ki Society
+meta_title: Contact the Oregon Ki Society
+meta_description: A contact form to send e-mail to the Oregon Ki Society, a nonprofit organization established to spread Ki principles, Kiatsu&reg; and Aikido.
+---
+
+:plain
+  <h2>Telephone or mail</h2>
+
+  <p>To contact a particular dojo by telephone or U.S. mail, please find the relevant address information on the <a href="/locations/index.html" title="List of all OKS dojos">OKS locations page</a>.  You can also send mail to:</p>
+
+  <address>P.O. Box 2143<br />
+  Lake Oswego, OR 97035</address>
+
+  <h2>E-mail</h2>
+
+  <p>The contact form below will send the Oregon Ki Society an e-mail with your request.  You will also receive a confirmation e-mail.  Your e-mail address will not be used for any purposes beyond responding to your question, and will not be saved for future use.</p>
+
+  <?php
+    /* This page loosely based on PHP Form Mailer from www.TheDemoSite.co.uk with
+      additions and changes to remove javascript.  E-mail validation from
+      http://www.ilovejackdaniels.com/ without modifications */
+
+  // ------- three variables you MUST change below  -------------------------------------------------------
+  $valid_ref1="http://www.oregonki.org/contact.php"; // valid source of input
+  $valid_ref2="http://oregonki.org/contact.php";// valid source of input
+  $replyemail="info@oregonki.org"; // email address
+  // ------------------------------------------------------------
+
+  //clean input in case of header injection attempts!
+  function clean_input_4email($value, $check_all_patterns = true) {
+    $patterns[0] = '/content-type:/i';
+    $patterns[1] = '/to:/i';
+    $patterns[2] = '/cc:/i';
+    $patterns[3] = '/bcc:/i';
+    if ($check_all_patterns) {
+      $patterns[4] = '/\r/';
+      $patterns[5] = '/\n/';
+      $patterns[6] = '/%0a/';
+      $patterns[7] = '/%0d/';
+    };
+    //NOTE: can use str_ireplace as this is case insensitive but only available on PHP version 5.0.
+    return preg_replace($patterns, "", $value);
+  };
+
+  function check_email_address($email) {
+    // From http://www.ilovejackdaniels.com/php/email-address-validation/
+    
+    // First, we check that there's one @ symbol, and that the lengths are right
+    if (!ereg("^[^@]{1,64}@[^@]{1,255}$", $email)) {
+      // Email invalid because wrong number of characters in one section, or wrong number of @ symbols.
+      return false;
+    };
+    // Split it into sections to make life easier
+    $email_array = explode("@", $email);
+    $local_array = explode(".", $email_array[0]);
+    for ($i = 0; $i < sizeof($local_array); $i++) {
+      if (!ereg("^(([A-Za-z0-9!#$%&'*+/=?^_`{|}~-][A-Za-z0-9!#$%&'*+/=?^_`{|}~\.-]{0,63})|(\"[^(\\|\")]{0,62}\"))$", $local_array[$i])) {
+        return false;
+      };
+    };
+    if (!ereg("^\[?[0-9\.]+\]?$", $email_array[1])) { // Check if domain is IP. If not, it should be valid domain name
+      $domain_array = explode(".", $email_array[1]);
+      if (sizeof($domain_array) < 2) {
+        return false; // Not enough parts to domain
+      }
+      for ($i = 0; $i < sizeof($domain_array); $i++) {
+        if (!ereg("^(([A-Za-z0-9][A-Za-z0-9-]{0,61}[A-Za-z0-9])|([A-Za-z0-9]+))$", $domain_array[$i])) {
+          return false;
+        };
+      };
+    };
+    return true;
+  }; // check_email_address
+
+  $name = '';
+  $email1 = '';
+  $email2 = '';
+  $thesubject = '';
+  $themessage = '';
+
+  if (isset($_POST["submit"])) {
+
+    if (!empty ($_POST["name"])) {
+      $name = clean_input_4email($_POST["name"]);
+    };
+    if (!empty ($_POST["email1"])) {
+      $email1 = clean_input_4email($_POST["email1"]);
+    };
+    if (!empty ($_POST["email2"])) {
+      $email2 = clean_input_4email($_POST["email2"]);
+    };
+    if (!empty ($_POST["thesubject"])) {
+      $thesubject = clean_input_4email($_POST["thesubject"]);
+    };
+    if (!empty ($_POST["themessage"])) {
+      $themessage = clean_input_4email($_POST["themessage"], false);
+    };
+
+    $message_sent = false;
+    $flag = "";
+
+    $ref_page = $_SERVER["HTTP_REFERER"];
+    if ($ref_page != $valid_ref1 && $ref_page != $valid_ref2 ) {
+      /* This page was called from an invalid referrer, probably a hacker; stop processing */
+      $notice = "<strong>Error</strong> &mdash; this page was called from an invalid referrer.  Please use <a href=\"$valid_ref1\" title=\"OKS contact form\">the OKS contact page</a> to send OKS a message.";
+    } else {
+      if ($name && $email1 && $email2 && $themessage) { /* If all required fields present */
+        if ($email1 == $email2) {
+          if (check_email_address($email1)) {
+            $success_sent_msg  = '<p class="notice">Your message has been successfully sent to us and we will reply as soon as possible.';
+            $success_sent_msg .= ' A copy of your query has been sent to you.';
+            $success_sent_msg .= ' Thank you for contacting the Oregon Ki Society.</p>';
+
+            if (!$thesubject) {
+              $thesubject = "[blank]";
+            };
+
+            $replymessage  = 'Hi ' . $name . ',
+  Thank you for your email regarding "' . $thesubject . '".
+  We will reply to you as soon as we can.
+
+  Below is a copy of the message you submitted:
+  --------------------------------------------------
+  Subject: ' . $thesubject .'
+  ' . $themessage . '
+  --------------------------------------------------
+  Thank you.
+
+  -- Oregon Ki Society';
+
+            mail($replyemail,
+               "[oregonki.org] " . stripslashes($thesubject),
+               "Message from " . stripslashes($name). " through oregonki.org:
+
+  " . stripslashes($themessage),
+               "From: " . $replyemail . "
+  Reply-To: " . $email1);
+            mail($email1,
+               "Receipt: " . stripslashes($thesubject),
+               stripslashes($replymessage),
+               "From: " . $replyemail . "
+  Reply-To: " . $replyemail);
+            echo $success_sent_msg;
+            $message_sent = true;
+            unset($name, $email1, $email2, $thesubject, $themessage);
+          } else { /* ELse we don't have a valid e-mail address */
+            $notice = "The e-mail address you provided is not valid.";
+            $flag .= "email1";
+            $flag .= "email2";
+          }; /* End e-mail validity check */
+        } else { /* Else we don't have matching e-mails */
+          $notice = "Your e-mail addresses don't match.";
+          $flag .= "email1";
+          $flag .= "email2";
+        }; /* End e-mail similarity check */
+      } else { /* Else we don't have all of the required fields */
+        $notice = "Please fill in all required fields.";
+        if (!($name)) {
+          $flag .= "name";
+        };
+        if (!($email1)) {
+          $flag .= "email1";
+        };
+        if (!($email2)) {
+          $flag .= "email2";
+        };
+        if (!($themessage)) {
+          $flag .= "themessage";
+        };
+      }; /* End validation checks */
+    }; /* End valid referrer check */
+  }; /* End form processing if it was submitted */
+
+  if (isset($notice)) { print "     <p class=\"notice\">$notice</p>"; };
+  ?>
+        <form method="post" action="contact.php">
+            <p><strong>*</strong> indicates a required field</p>
+            <label for="name"<?php if (strpos($flag, "name") !== false) { print " class=\"error\""; }; ?>><strong>*</strong>Name:</label><input size="30" maxlength="30" name="name" id="name" value="<?php print stripslashes($name); ?>"<?php if (strpos($flag, "name") !== false) { print " class=\"error\""; }; ?> />
+            <label for="email1"<?php if (strpos($flag, "email1") !== false) { print " class=\"error\""; }; ?>><strong>*</strong>E-mail:</label><input size="30" maxlength="80" name="email1" id="email1" value="<?php print stripslashes($email1); ?>"<?php if (strpos($flag, "email1") !== false) { print " class=\"error\""; }; ?> />
+            <label for="email2"<?php if ((strpos($flag, "email2") !== false)) { print " class=\"error\""; }; ?>><strong>*</strong>Confirm e-mail:</label><input size="30" maxlength="80" name="email2" id="email2" value="<?php print stripslashes($email2); ?>"<?php if (strpos($flag, "email2") !== false) { print " class=\"error\""; }; ?> />
+            <label for="thesubject"<?php if (strpos($flag, "subject") !== false) { print " class=\"error\""; }; ?>>Subject:</label><input size="30" maxlength="100" name="thesubject" id="thesubject" value="<?php print stripslashes($thesubject); ?>"<?php if (strpos($flag, "thesubject") !== false) { print " class=\"error\""; }; ?> />
+            <label for="themessage"<?php if (strpos($flag, "message") !== false) { print " class=\"error\""; }; ?>><strong>*</strong>Your message:</label><textarea name="themessage" id="themessage" rows="7" cols="30"<?php if (strpos($flag, "themessage") !== false) { print " class=\"error\""; }; ?>><?php print stripslashes($themessage); ?></textarea>
+            <label for="submit">Send it:</label><input type="submit" name="submit" id="submit" value="Send" />
+        </form>
+
+- content_for :secondary_content do
+  %h2 About our programs
+  %p The Oregon Ki Society has programs in <a href="/ki/index.html" title="Mind and body coordination">Ki training</a>, <a href="/aikido/index.html" title="Aikido with mind and body coordinated">Aikido</a> and <a href="/kiatsu/index.html" title="Pressing with Ki, for personal health and healing">Kiatsu</a>.  We also have a <a href="/kids/index.html" title="Aikido training for kids">children's program</a> to teach Aikido to kids under the age of 15.

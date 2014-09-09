@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+  <event>
+    <title><![CDATA[Samurai Film Festival]]></title>
+    <description><![CDATA[Join us for Yojimbo (at 1:30) and The Seven Samurai (at 4). Bring potluck-style fingerfood, friends and family. Donations accepted for the SE Dojo Building fund.]]></description>
+    <start_date>4/5/14</start_date>
+    <start_time>1:30</start_time>
+    <location>Kiatsu</location>
+  </event>
+  <event>
+    <title><![CDATA[Misogi]]></title>
+    <description><![CDATA[SE dojo will be hosting a misogi to send out the new year instead of the usual Thursday evening class.]]></description>
+    <start_date>12/19/13</start_date>
+    <start_time>7:00</start_time>
+    <location>SE</location>
+  </event>
+  <event>
+    <title><![CDATA[Last day of classes]]></title>
+    <description><![CDATA[No classes will be held over the holiday break.]]></description>
+    <start_date>12/22/13</start_date>
+    <start_time>until the new year</start_time>
+  </event>
+  <event>
+    <title><![CDATA[SW dojo cleaning party]]></title>
+    <description><![CDATA[Come help with the year-end dojo maintenance party!]]></description>
+    <start_date>12/30/13</start_date>
+    <start_time>6:00 - 9:00pm</start_time>
+    <location>Tigard</location>
+    <dojo>SW</dojo>
+  </event>
+  <event>
+    <title><![CDATA[Classes resume]]></title>
+    <description><![CDATA[With the new year comes new training.]]></description>
+    <start_date>1/2/14</start_date>
+  </event>
+  <event>
+    <title><![CDATA[Misogi]]></title>
+    <description><![CDATA[Our annual opportunity to ring in the new year.  Open to all current students. Annual new year's party to follow at 11:00.]]></description>
+    <start_date>1/5/14</start_date>
+    <start_time>arrive by 8:30 am, misogi starts at 9:00 am</start_time>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[Martin Luther King Jr. Day]]></title>
+    <description><![CDATA[No classes due to holiday]]></description>
+    <start_date>1/20/14</start_date>
+  </event>
+  <event>
+    <title><![CDATA[Kiatsu seminar #5]]></title>
+    <description><![CDATA[Seminar #5 is open to all current Kiatsu students and graduates.  Advanced Ki-Aikido students and instructors (brown and black belts) are invited to attend the Saturday session.]]></description>
+    <start_date>2/8/14</start_date>
+    <duration>2</duration>
+    <start_time>starts at 9:00 am both days</start_time>
+    <location>Kiatsu</location>
+    <dojo>Kiatsu</dojo>
+  </event>
+  <event>
+    <title><![CDATA[President's day weekend]]></title>
+    <description><![CDATA[No classes over on holiday Sunday or Monday.]]></description>
+    <start_date>2/16/14</start_date>
+    <duration>2</duration>
+  </event>
+  <event>
+    <title><![CDATA[Instructors' workshop #1]]></title>
+    <description><![CDATA[The workshop will focus on teaching skills for aikido instructors currently teaching a class, with feedback from Tabata sensei.  Details TBA.]]></description>
+    <start_date>2/23/14</start_date>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[Taigi Shinsakai]]></title>
+    <description><![CDATA[The children's competition will be in the morning, with the adults in the afternoon.  Viewing is open to the public.]]></description>
+    <start_date>3/15/14</start_date>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[No class]]></title>
+    <description><![CDATA[Because of the Shinsakai, there will be no morning Ki class.]]></description>
+    <start_date>3/16/14</start_date>
+    <location>Tigard</location>
+    <dojo>Tigard</dojo>
+  </event>
+  <event>
+    <title><![CDATA[Randori class]]></title>
+    <description><![CDATA[The usual advanced aikido class will cover randori.  All students brown belt and up are encouraged to attend.]]></description>
+    <start_date>3/30/14</start_date>
+    <start_time>9:30</start_time>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[Spring camp]]></title>
+    <description><![CDATA[One of two annual opportunities to train Aikido intensively, Spring camp is open to all current students.]]></description>
+    <start_date>4/12/14</start_date>
+    <duration>2</duration>
+    <start_time>9:00 am on Saturday, 7:30 am on Sunday</start_time>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[Easter]]></title>
+    <description><![CDATA[No classes because of the holiday.]]></description>
+    <start_date>4/20/14</start_date>
+  </event>
+  <event>
+    <title><![CDATA[Board test]]></title>
+    <description><![CDATA[Testing for brown and black belts]]></description>
+    <start_date>4/27/14</start_date>
+    <start_time>following morning Ki class at noon</start_time>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[Instructors' workshop #2]]></title>
+    <description><![CDATA[The workshop will focus on teaching skills for aikido instructors currently teaching a class, with feedback from Tabata sensei.  Details TBA.]]></description>
+    <start_date>2/23/14</start_date>
+    <location>Corvallis</location>
+  </event>
+  <event>
+    <title><![CDATA[Mother's day]]></title>
+    <description><![CDATA[No classes because of the holiday.]]></description>
+    <start_date>5/11/14</start_date>
+  </event>
+  <event>
+    <title><![CDATA[Kiatsu seminar #1]]></title>
+    <description><![CDATA[Seminar #1 is open to all current Kiatsu students and graduates.  Advanced Ki-Aikido students and instructors (brown and black belts) are invited to attend the Saturday session.]]></description>
+    <start_date>5/17/14</start_date>
+    <duration>2</duration>
+    <start_time>starts at 9:00 am both days</start_time>
+    <location>Kiatsu</location>
+    <dojo>Kiatsu</dojo>
+  </event>
+  <event>
+    <title><![CDATA[Memorial day weekend]]></title>
+    <description><![CDATA[No classes on Sunday or Monday because of the holiday.]]></description>
+    <start_date>5/25/14</start_date>
+    <duration>2</duration>
+  </event>
+  <event>
+    <title><![CDATA[Kids' camp]]></title>
+    <description><![CDATA[The annual kids' camp is this weekend, featuring lots of training and activities for members of the children's program.]]></description>
+    <start_date>6/7/14</start_date>
+    <duration>2</duration>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[No classes]]></title>
+    <description><![CDATA[Because of kids' camp, there will be no morning Ki class.]]></description>
+    <start_date>6/15/14</start_date>
+    <location>Tigard</location>
+    <dojo>Tigard</dojo>
+  </event>
+  <event>
+    <title><![CDATA[National Ki Conference]]></title>
+    <description><![CDATA[The national Ki-Aikido seminar is being held in Las Vegas this year. The seminar is open to all, but and students brown belt and up are encouraged to attend.]]></description>
+    <start_date>6/26/14</start_date>
+    <duration>4</duration>
+  </event>
+  <event>
+    <title><![CDATA[Fourth of July weekend]]></title>
+    <description><![CDATA[No classes because of the holiday.]]></description>
+    <start_date>7/4/14</start_date>
+  </event>
+  <event>
+    <title><![CDATA[Fourth of July weekend]]></title>
+    <description><![CDATA[No classes because of the holiday.]]></description>
+    <start_date>7/6/14</start_date>
+  </event>
+  <event>
+    <title><![CDATA[Kiatsu class with Tabata Sensei]]></title>
+    <description>Advanced Kiatsu training with Tabata Sensei for active Kiatsu School participants.</description>
+    <start_date>7/30/14</start_date>
+    <start_time>7:15 pm</start_time>
+    <location>Kiatsu</location>
+  </event>
+  <event>
+    <title><![CDATA[40th Anniversary campout and training]]></title>
+    <description><![CDATA[Celebrate 40 years of the Oregon Ki Society with a special training session and camping weekend.]]></description>
+    <start_date>8/2/14</start_date>
+    <duration>2</duration>
+  </event>
+  <event>
+    <title><![CDATA[Instructor's class with Tabata Sensei]]></title>
+    <description>Advanced training with Tabata Sensei for all instructors, including an hour of Kiatsu practice.</description>
+    <start_date>8/10/14</start_date>
+    <start_time>10 am to 2 pm, with Kiatsu between 11 and noon</start_time>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[Kiatsu class with Tabata Sensei]]></title>
+    <description>Advanced Kiatsu training with Tabata Sensei for active Kiatsu School participants.</description>
+    <start_date>8/13/14</start_date>
+    <start_time>7:15 pm</start_time>
+    <location>Kiatsu</location>
+  </event>
+  <event>
+    <title><![CDATA[Instructors' workshop #3]]></title>
+    <description><![CDATA[The workshop will focus on teaching skills for aikido instructors currently teaching a class, with feedback from Tabata sensei.  Details TBA.]]></description>
+    <start_date>8/24/14</start_date>
+    <location>Eugene</location>
+  </event>
+  <event>
+    <title><![CDATA[Labor day weekend]]></title>
+    <description><![CDATA[No classes because of the holiday.]]></description>
+    <start_date>8/31/14</start_date>
+    <duration>2</duration>
+  </event>
+  <event>
+    <title><![CDATA[Kiatsu seminar #1]]></title>
+    <description><![CDATA[Seminar #1 is open to all current Kiatsu students and graduates.  Advanced Ki-Aikido students and instructors (brown and black belts) are invited to attend the Sunday session.]]></description>
+    <start_date>9/6/14</start_date>
+    <duration>2</duration>
+    <start_time>starts at 9:00 am both days</start_time>
+    <location>Kiatsu</location>
+    <dojo>Kiatsu</dojo>
+  </event>
+  <event>
+    <title><![CDATA[Kiatsu class with Tabata Sensei]]></title>
+    <description>Advanced Kiatsu training with Tabata Sensei for active Kiatsu School participants.</description>
+    <start_date>9/10/14</start_date>
+    <start_time>7:15 pm</start_time>
+    <location>Kiatsu</location>
+  </event>
+  <event>
+    <title><![CDATA[Instructor's class with Tabata Sensei]]></title>
+    <description>Advanced training with Tabata Sensei for all instructors, including an hour of Kiatsu practice.</description>
+    <start_date>9/14/14</start_date>
+    <start_time>10 am to 2 pm, with Kiatsu between 11 and noon</start_time>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[Randori class]]></title>
+    <description><![CDATA[The usual advanced aikido class will cover randori.  All students brown belt and up are encouraged to attend.]]></description>
+    <start_date>9/21/14</start_date>
+    <start_time>9:30</start_time>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[Board test]]></title>
+    <description><![CDATA[Testing for brown and black belts]]></description>
+    <start_date>10/5/14</start_date>
+    <start_time>following morning Ki class at noon</start_time>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[Kiatsu class with Tabata Sensei]]></title>
+    <description>Advanced Kiatsu training with Tabata Sensei for active Kiatsu School participants.</description>
+    <start_date>10/8/14</start_date>
+    <start_time>7:15 pm</start_time>
+    <location>Kiatsu</location>
+  </event>
+  <event>
+    <title><![CDATA[Instructor's class with Tabata Sensei]]></title>
+    <description>Advanced training with Tabata Sensei for all instructors, including an hour of Kiatsu practice.</description>
+    <start_date>10/12/14</start_date>
+    <start_time>10 am to 2 pm, with Kiatsu between 11 and noon</start_time>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[40th Anniversary Dinner]]></title>
+    <description>Participate in the Oregon Ki Society's 40th anniversary at a celebratory dinner. Details TBA.</description>
+    <start_date>10/18/14</start_date>
+  </event>
+  <event>
+    <title><![CDATA[Instructors' workshop #4]]></title>
+    <description><![CDATA[The workshop will focus on teaching skills for aikido instructors currently teaching a class, with feedback from Tabata sensei.  Details TBA.]]></description>
+    <start_date>10/19/14</start_date>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[World camp]]></title>
+    <description><![CDATA[Train at Ki Society Headquarters in Japan at this intensive camp.]]></description>
+    <start_date>10/22/14</start_date>
+    <duration>5</duration>
+  </event>
+  <event>
+    <title><![CDATA[Kiatsu seminar #2]]></title>
+    <description><![CDATA[Seminar #2 is open to all current Kiatsu students and graduates.  Advanced Ki-Aikido students and instructors (brown and black belts) are invited to attend the Sunday session.]]></description>
+    <start_date>11/1/14</start_date>
+    <duration>2</duration>
+    <start_time>starts at 9:00 am both days</start_time>
+    <location>Kiatsu</location>
+    <dojo>Kiatsu</dojo>
+  </event>
+  <event>
+    <title><![CDATA[Kiatsu class with Tabata Sensei]]></title>
+    <description>Advanced Kiatsu training with Tabata Sensei for active Kiatsu School participants.</description>
+    <start_date>11/5/14</start_date>
+    <start_time>7:15 pm</start_time>
+    <location>Kiatsu</location>
+  </event>
+  <event>
+    <title><![CDATA[Instructor's class with Tabata Sensei]]></title>
+    <description>Advanced training with Tabata Sensei for all instructors, including an hour of Kiatsu practice.</description>
+    <start_date>11/9/14</start_date>
+    <start_time>10 am to 2 pm, with Kiatsu between 11 and noon</start_time>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[Fall camp]]></title>
+    <description><![CDATA[One of two annual opportunities to train Aikido intensively, Fall camp is open to all current students.]]></description>
+    <start_date>11/22/14</start_date>
+    <start_time>9:00 am on Saturday, 7:30 am on Sunday</start_time>
+    <duration>2</duration>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[Thanksgiving]]></title>
+    <description><![CDATA[No classes over the holiday weekend.]]></description>
+    <start_date>11/27/14</start_date>
+    <duration>2</duration>
+  </event>
+  <event>
+    <title><![CDATA[Thanksgiving weekend]]></title>
+    <description><![CDATA[No classes on Thanksgiving Sunday.]]></description>
+    <start_date>11/30/14</start_date>
+  </event>
+  <event>
+    <title><![CDATA[Kiatsu class with Tabata Sensei]]></title>
+    <description>Advanced Kiatsu training with Tabata Sensei for active Kiatsu School participants.</description>
+    <start_date>12/3/14</start_date>
+    <start_time>7:15 pm</start_time>
+    <location>Kiatsu</location>
+  </event>
+  <event>
+    <title><![CDATA[Management conference]]></title>
+    <description><![CDATA[All instructors are invited to attend the annual management conference.]]></description>
+    <start_date>12/7/14</start_date>
+    <start_time>9:00 am</start_time>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[Instructor's class with Tabata Sensei]]></title>
+    <description>Advanced training with Tabata Sensei for all instructors, including an hour of Kiatsu practice.</description>
+    <start_date>8/14/14</start_date>
+    <start_time>10 am to 2 pm, with Kiatsu between 11 and noon</start_time>
+    <location>Tigard</location>
+  </event>
+  <event>
+    <title><![CDATA[Kiatsu class with Tabata Sensei]]></title>
+    <description>Advanced Kiatsu training with Tabata Sensei for active Kiatsu School participants.</description>
+    <start_date>12/17/14</start_date>
+    <start_time>7:15 pm</start_time>
+    <location>Kiatsu</location>
+  </event>
+  <event>
+    <title><![CDATA[Last day of classes]]></title>
+    <description><![CDATA[No classes will be held over the holiday break.]]></description>
+    <start_date>12/21/14</start_date>
+    <start_time>until the new year</start_time>
+  </event>
+  <event>
+    <title><![CDATA[Classes resume]]></title>
+    <description><![CDATA[With the new year comes new training.]]></description>
+    <start_date>1/2/15</start_date>
+  </event>
+  <event>
+    <title><![CDATA[Misogi]]></title>
+    <description><![CDATA[Our annual opportunity to ring in the new year.  Open to all current students. Annual new year's party to follow at 11:30.]]></description>
+    <start_date>1/4/15</start_date>
+    <start_time>arrive by 8:30 am, misogi starts at 9:00 am</start_time>
+    <location>Tigard</location>
+  </event>
+</events>
