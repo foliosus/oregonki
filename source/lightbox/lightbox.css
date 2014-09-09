@@ -1,0 +1,110 @@
+#lightbox{
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+#lightbox a { border-bottom: none; }
+#lightbox a img{ border: none; }
+#lightbox img { float: none; margin: 0; }
+
+#outerImageContainer{
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	border: 1px solid #900;
+	border-bottom: none;
+	}
+
+#imageContainer{
+	padding: 20px;
+	}
+
+#loading{
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+	}
+#hoverNav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	}
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{
+	width: 49%;
+	height: 100%;
+	background: transparent url(blank.gif) no-repeat; /* Trick IE into showing hover */
+	display: block;
+	}
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(nextlabel.gif) right 15% no-repeat; }
+
+
+#imageDataContainer{
+	background-color: #fff;
+	margin: 0 auto;
+	border: 1px solid #900;
+	border-top: none;
+	}
+
+#imageData{
+	padding:0 20px;
+	position: relative;
+	}
+#imageData #imageDetails{ width: 80%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left;	}			
+#imageData #bottomNavClose{ display: block; width: 90px; position: absolute; right: 20px;	}
+#imageData h3{ margin-top: 0; }
+		
+#overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+	background-color: #fff;
+	filter:alpha(opacity=90);
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+	}
+	
+
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+	}
+
+* html>body .clearfix {
+	display: inline-block; 
+	width: 100%;
+	}
+
+* html .clearfix {
+	/* Hides from IE-mac \*/
+	height: 1%;
+	/* End hide from IE-mac */
+	}	
+	

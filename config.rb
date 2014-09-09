@@ -1,5 +1,30 @@
 require 'pry'
 
+module Enumerable
+  # Implementation from ActiveSupport 4.0.2
+  def in_groups_of(number, fill_with = nil)
+    if fill_with == false
+      collection = self
+    else
+      # size % number gives how many extra we have;
+      # subtracting from number gives how many to add;
+      # modulo number ensures we don't add group of just fill.
+      padding = (number - size % number) % number
+      collection = dup.concat([fill_with] * padding)
+    end
+
+    if block_given?
+      collection.each_slice(number) { |slice| yield(slice) }
+    else
+      groups = []
+      collection.each_slice(number) { |group| groups << group }
+      groups
+    end
+  end
+end
+
+Array.send(:include, Enumerable)
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -52,6 +77,9 @@ helpers do
     end
   end
 
+  # -----------------------
+  # Dojo schedules
+
   # Parameters
   # course[:time] is "6:30 pm" or anything parsable by Time.
   # course[:duration] is the duration in minutes. Defaults to 60 minutes (1 hour).
@@ -94,6 +122,89 @@ helpers do
       content_tag(:thead, heading) + content_tag(:tbody, rows)
     end
   end # dojo_schedule
+
+
+  # -----------------------
+  # Galleries
+
+  def image_markup(name, link, thumbnail)
+    image = image_tag(thumbnail, alt: name, width: 160, height: 106)
+    image_link = link_to(image, link, title: name, rel: 'lightbox_thumbs')
+    image_link + content_tag(:p, name)
+  end
+
+  # Convert fractional numbers to html entities, use &quot; to indicate inches
+  def stringify_dimensions(dimensions)
+    return '' unless dimensions
+    dimensions.collect do |dimension|
+      if dimension.is_a?(Float)
+        int = dimension.to_i.to_s
+        int = '' if int == '0'
+        frac = dimension.modulo(1)
+        int + case frac
+        when 0.25 then '&frac14;'
+        when 0.33 then '&frac13;'
+        when 0.5 then '&frac12;'
+        when 0.75 then '&frac34;'
+        else frac.to_s
+        end
+      else
+        html_escape(dimension.to_s)
+      end + "&quot;"
+    end.join(' x ')
+  end
+
+  def thumbnail_name(filename)
+    filename.sub('/', "/thumbnails/")
+  end
+
+  def generate_thumbnail!(source_filename, thumbnail_filename)
+    source_file = "#{source_dir}/#{images_dir}/#{source_filename}"
+    return unless File.exists?(source_file)
+    destination_file = "#{root_path}/source/#{images_dir}/#{thumbnail_filename}"
+    puts "Generating #{thumbnail_filename} from #{source_filename}"
+    `convert #{source_file} -thumbnail 160x106^ -gravity center -extent 160x106 -format jpg -quality 35 -unsharp 0x.5 #{destination_file}`
+  end
+
+  def gallery_image(name, number, prefix)
+    content_tag(:div, class: number % 3 == 1 ? 'first' : nil) do
+      filename = "galleries/#{prefix}_#{number}.jpg"
+      thumbnail = thumbnail_name(filename)
+      generate_thumbnail!(filename, thumbnail) unless File.exists?("#{source_dir}/#{images_dir}/#{thumbnail}")
+      image_markup(name, "/#{images_dir}/#{filename}", thumbnail)
+    end
+  end
+
+  def gallery(source, prefix = nil)
+    images = data.photos[source]
+    return content_tag(:p, 'No images found') unless images
+
+    content_for :javascript do
+      '<script type="text/javascript" src="/lightbox/prototype.js"></script>
+      <script type="text/javascript" src="/lightbox/scriptaculous.js?load=effects"></script>
+      <script type="text/javascript" src="/lightbox/lightbox.js"></script>'
+    end
+    content_for :css do
+      '<link rel="stylesheet" href="/lightbox/lightbox.css" type="text/css" media="screen" />'
+    end
+
+    prefix ||= source.to_s
+
+    output = ''
+    index = 0
+
+    images.in_groups_of(3, false) do |group|
+      output += content_tag(:div, class: 'gallery_row') do
+        group.collect do |name|
+          index += 1
+          puts index
+          gallery_image(name, index, prefix)
+        end.join("\n")
+      end
+    end
+
+    content_tag(:div, output, class: 'gallery')
+  end
 end
 
 set :css_dir, 'stylesheets'
