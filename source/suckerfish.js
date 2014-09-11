@@ -1,0 +1,1 @@
+sfHover = function() {	var sfEls = document.getElementById("navigation").getElementsByTagName("LI");	for (var i=0; i<sfEls.length; i++) {		sfEls[i].onmouseover=function() {			this.className="sfhover";		}		sfEls[i].onmouseout=function() {			this.className="";		}	}}if (window.attachEvent) window.attachEvent("onload", sfHover);
