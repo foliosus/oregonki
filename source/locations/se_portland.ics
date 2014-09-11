@@ -1,0 +1,385 @@
+BEGIN:VCALENDAR
+PRODID;X-RICAL-TZSOURCE=TZINFO:-//com.denhaven2/NONSGML ri_cal gem//EN
+CALSCALE:GREGORIAN
+VERSION:2.0
+X-WR-CALNAME::Oregon Ki Society: SE portland dojo
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140405
+DTSTART;VALUE=DATE:20140405
+DESCRIPTION:1:30\n\nJoin us for Yojimbo (at 1:30) and The Seven Samurai (
+ at 4). Bring potluck-style fingerfood\, friends and family. Donations ac
+ cepted for the SE Dojo Building fund.
+SUMMARY:Samurai Film Festival
+LOCATION:Kiatsu dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20131219
+DTSTART;VALUE=DATE:20131219
+DESCRIPTION:7:00\n\nSE dojo will be hosting a misogi to send out the new 
+ year instead of the usual Thursday evening class.
+SUMMARY:Misogi
+LOCATION:SE dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20131222
+DTSTART;VALUE=DATE:20131222
+DESCRIPTION:until the new year\n\nNo classes will be held over the holida
+ y break.
+SUMMARY:Last day of classes
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140102
+DTSTART;VALUE=DATE:20140102
+DESCRIPTION:With the new year comes new training.
+SUMMARY:Classes resume
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140105
+DTSTART;VALUE=DATE:20140105
+DESCRIPTION:arrive by 8:30 am\, misogi starts at 9:00 am\n\nOur annual op
+ portunity to ring in the new year.  Open to all current students. Annual
+  new year's party to follow at 11:00.
+SUMMARY:Misogi
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140120
+DTSTART;VALUE=DATE:20140120
+DESCRIPTION:No classes due to holiday
+SUMMARY:Martin Luther King Jr. Day
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140218
+DTSTART;VALUE=DATE:20140216
+DESCRIPTION:No classes over on holiday Sunday or Monday.
+SUMMARY:President's day weekend
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140223
+DTSTART;VALUE=DATE:20140223
+DESCRIPTION:The workshop will focus on teaching skills for aikido instruc
+ tors currently teaching a class\, with feedback from Tabata sensei.  Det
+ ails TBA.
+SUMMARY:Instructors' workshop #1
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140315
+DTSTART;VALUE=DATE:20140315
+DESCRIPTION:The children's competition will be in the morning\, with the 
+ adults in the afternoon.  Viewing is open to the public.
+SUMMARY:Taigi Shinsakai
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140330
+DTSTART;VALUE=DATE:20140330
+DESCRIPTION:9:30\n\nThe usual advanced aikido class will cover randori.  
+ All students brown belt and up are encouraged to attend.
+SUMMARY:Randori class
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140414
+DTSTART;VALUE=DATE:20140412
+DESCRIPTION:9:00 am on Saturday\, 7:30 am on Sunday\n\nOne of two annual 
+ opportunities to train Aikido intensively\, Spring camp is open to all c
+ urrent students.
+SUMMARY:Spring camp
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140420
+DTSTART;VALUE=DATE:20140420
+DESCRIPTION:No classes because of the holiday.
+SUMMARY:Easter
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140427
+DTSTART;VALUE=DATE:20140427
+DESCRIPTION:following morning Ki class at noon\n\nTesting for brown and b
+ lack belts
+SUMMARY:Board test
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140223
+DTSTART;VALUE=DATE:20140223
+DESCRIPTION:The workshop will focus on teaching skills for aikido instruc
+ tors currently teaching a class\, with feedback from Tabata sensei.  Det
+ ails TBA.
+SUMMARY:Instructors' workshop #2
+LOCATION:Corvallis dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140511
+DTSTART;VALUE=DATE:20140511
+DESCRIPTION:No classes because of the holiday.
+SUMMARY:Mother's day
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140527
+DTSTART;VALUE=DATE:20140525
+DESCRIPTION:No classes on Sunday or Monday because of the holiday.
+SUMMARY:Memorial day weekend
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140609
+DTSTART;VALUE=DATE:20140607
+DESCRIPTION:The annual kids' camp is this weekend\, featuring lots of tra
+ ining and activities for members of the children's program.
+SUMMARY:Kids' camp
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140630
+DTSTART;VALUE=DATE:20140626
+DESCRIPTION:The national Ki-Aikido seminar is being held in Las Vegas thi
+ s year. The seminar is open to all\, but and students brown belt and up 
+ are encouraged to attend.
+SUMMARY:National Ki Conference
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140704
+DTSTART;VALUE=DATE:20140704
+DESCRIPTION:No classes because of the holiday.
+SUMMARY:Fourth of July weekend
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140706
+DTSTART;VALUE=DATE:20140706
+DESCRIPTION:No classes because of the holiday.
+SUMMARY:Fourth of July weekend
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140730
+DTSTART;VALUE=DATE:20140730
+DESCRIPTION:7:15 pm\n\nAdvanced Kiatsu training with Tabata Sensei for ac
+ tive Kiatsu School participants.
+SUMMARY:Kiatsu class with Tabata Sensei
+LOCATION:Kiatsu dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140804
+DTSTART;VALUE=DATE:20140802
+DESCRIPTION:Celebrate 40 years of the Oregon Ki Society with a special tr
+ aining session and camping weekend.
+SUMMARY:40th Anniversary campout and training
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140810
+DTSTART;VALUE=DATE:20140810
+DESCRIPTION:10 am to 2 pm\, with Kiatsu between 11 and noon\n\nAdvanced t
+ raining with Tabata Sensei for all instructors\, including an hour of Ki
+ atsu practice.
+SUMMARY:Instructor's class with Tabata Sensei
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140813
+DTSTART;VALUE=DATE:20140813
+DESCRIPTION:7:15 pm\n\nAdvanced Kiatsu training with Tabata Sensei for ac
+ tive Kiatsu School participants.
+SUMMARY:Kiatsu class with Tabata Sensei
+LOCATION:Kiatsu dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140824
+DTSTART;VALUE=DATE:20140824
+DESCRIPTION:The workshop will focus on teaching skills for aikido instruc
+ tors currently teaching a class\, with feedback from Tabata sensei.  Det
+ ails TBA.
+SUMMARY:Instructors' workshop #3
+LOCATION:Eugene dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140902
+DTSTART;VALUE=DATE:20140831
+DESCRIPTION:No classes because of the holiday.
+SUMMARY:Labor day weekend
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140910
+DTSTART;VALUE=DATE:20140910
+DESCRIPTION:7:15 pm\n\nAdvanced Kiatsu training with Tabata Sensei for ac
+ tive Kiatsu School participants.
+SUMMARY:Kiatsu class with Tabata Sensei
+LOCATION:Kiatsu dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140914
+DTSTART;VALUE=DATE:20140914
+DESCRIPTION:10 am to 2 pm\, with Kiatsu between 11 and noon\n\nAdvanced t
+ raining with Tabata Sensei for all instructors\, including an hour of Ki
+ atsu practice.
+SUMMARY:Instructor's class with Tabata Sensei
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140921
+DTSTART;VALUE=DATE:20140921
+DESCRIPTION:9:30\n\nThe usual advanced aikido class will cover randori.  
+ All students brown belt and up are encouraged to attend.
+SUMMARY:Randori class
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20141005
+DTSTART;VALUE=DATE:20141005
+DESCRIPTION:following morning Ki class at noon\n\nTesting for brown and b
+ lack belts
+SUMMARY:Board test
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20141008
+DTSTART;VALUE=DATE:20141008
+DESCRIPTION:7:15 pm\n\nAdvanced Kiatsu training with Tabata Sensei for ac
+ tive Kiatsu School participants.
+SUMMARY:Kiatsu class with Tabata Sensei
+LOCATION:Kiatsu dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20141012
+DTSTART;VALUE=DATE:20141012
+DESCRIPTION:10 am to 2 pm\, with Kiatsu between 11 and noon\n\nAdvanced t
+ raining with Tabata Sensei for all instructors\, including an hour of Ki
+ atsu practice.
+SUMMARY:Instructor's class with Tabata Sensei
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20141018
+DTSTART;VALUE=DATE:20141018
+DESCRIPTION:Participate in the Oregon Ki Society's 40th anniversary at a 
+ celebratory dinner. Details TBA.
+SUMMARY:40th Anniversary Dinner
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20141019
+DTSTART;VALUE=DATE:20141019
+DESCRIPTION:The workshop will focus on teaching skills for aikido instruc
+ tors currently teaching a class\, with feedback from Tabata sensei.  Det
+ ails TBA.
+SUMMARY:Instructors' workshop #4
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20141027
+DTSTART;VALUE=DATE:20141022
+DESCRIPTION:Train at Ki Society Headquarters in Japan at this intensive c
+ amp.
+SUMMARY:World camp
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20141105
+DTSTART;VALUE=DATE:20141105
+DESCRIPTION:7:15 pm\n\nAdvanced Kiatsu training with Tabata Sensei for ac
+ tive Kiatsu School participants.
+SUMMARY:Kiatsu class with Tabata Sensei
+LOCATION:Kiatsu dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20141109
+DTSTART;VALUE=DATE:20141109
+DESCRIPTION:10 am to 2 pm\, with Kiatsu between 11 and noon\n\nAdvanced t
+ raining with Tabata Sensei for all instructors\, including an hour of Ki
+ atsu practice.
+SUMMARY:Instructor's class with Tabata Sensei
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20141124
+DTSTART;VALUE=DATE:20141122
+DESCRIPTION:9:00 am on Saturday\, 7:30 am on Sunday\n\nOne of two annual 
+ opportunities to train Aikido intensively\, Fall camp is open to all cur
+ rent students.
+SUMMARY:Fall camp
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20141129
+DTSTART;VALUE=DATE:20141127
+DESCRIPTION:No classes over the holiday weekend.
+SUMMARY:Thanksgiving
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20141130
+DTSTART;VALUE=DATE:20141130
+DESCRIPTION:No classes on Thanksgiving Sunday.
+SUMMARY:Thanksgiving weekend
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20141203
+DTSTART;VALUE=DATE:20141203
+DESCRIPTION:7:15 pm\n\nAdvanced Kiatsu training with Tabata Sensei for ac
+ tive Kiatsu School participants.
+SUMMARY:Kiatsu class with Tabata Sensei
+LOCATION:Kiatsu dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20141207
+DTSTART;VALUE=DATE:20141207
+DESCRIPTION:9:00 am\n\nAll instructors are invited to attend the annual m
+ anagement conference.
+SUMMARY:Management conference
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20140814
+DTSTART;VALUE=DATE:20140814
+DESCRIPTION:10 am to 2 pm\, with Kiatsu between 11 and noon\n\nAdvanced t
+ raining with Tabata Sensei for all instructors\, including an hour of Ki
+ atsu practice.
+SUMMARY:Instructor's class with Tabata Sensei
+LOCATION:Tigard dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20141217
+DTSTART;VALUE=DATE:20141217
+DESCRIPTION:7:15 pm\n\nAdvanced Kiatsu training with Tabata Sensei for ac
+ tive Kiatsu School participants.
+SUMMARY:Kiatsu class with Tabata Sensei
+LOCATION:Kiatsu dojo
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20141221
+DTSTART;VALUE=DATE:20141221
+DESCRIPTION:until the new year\n\nNo classes will be held over the holida
+ y break.
+SUMMARY:Last day of classes
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20150102
+DTSTART;VALUE=DATE:20150102
+DESCRIPTION:With the new year comes new training.
+SUMMARY:Classes resume
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
+DTEND;VALUE=DATE:20150104
+DTSTART;VALUE=DATE:20150104
+DESCRIPTION:arrive by 8:30 am\, misogi starts at 9:00 am\n\nOur annual op
+ portunity to ring in the new year.  Open to all current students. Annual
+  new year's party to follow at 11:30.
+SUMMARY:Misogi
+LOCATION:Tigard dojo
+END:VEVENT
+END:VCALENDAR

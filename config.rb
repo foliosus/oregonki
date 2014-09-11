@@ -171,11 +171,7 @@ helpers do
       filename = "galleries/#{prefix}_#{number}.jpg"
       thumbnail = thumbnail_name(filename)
       generate_thumbnail!(filename, thumbnail) unless File.exists?("#{source_dir}/#{images_dir}/#{thumbnail}")
-      begin
-        image_markup(name, "/#{images_dir}/#{filename}", thumbnail)
-      rescue => e
-        binding.pry
-      end
+      image_markup(name, "/#{images_dir}/#{filename}", thumbnail)
     end
   end
 
@@ -224,7 +220,7 @@ configure :build do
   activate :minify_javascript
 
   # Enable cache buster
-  activate :asset_hash
+  # activate :asset_hash
 
   # Use relative URLs
   activate :relative_assets
