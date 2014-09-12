@@ -590,10 +590,11 @@ cite {
 
 .index #flyout {
   position: absolute;
-  top: 40px;
-  right: -13em;
-  width: 24em;
+  top: 0;
+  right: -10em;
+  width: 22em;
   padding-right: $layout_gutter;
+  padding-bottom: 1.5em;
   background: #fff;
   border: 2px solid #000;
   border-radius: 5px;
@@ -605,6 +606,7 @@ cite {
 }
 .index #flyout p {
   font-size: 12px;
+  margin-bottom: 0;
 }
 
 /* ================= */
