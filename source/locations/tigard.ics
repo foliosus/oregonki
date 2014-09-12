@@ -4,6 +4,18 @@ CALSCALE:GREGORIAN
 VERSION:2.0
 X-WR-CALNAME::Oregon Ki Society: Tigard dojo
 BEGIN:VEVENT
+DTEND;VALUE=DATE:20140921
+DTSTART;VALUE=DATE:20140921
+DESCRIPTION:1:00 - 3:00 pm\n\nLearn a hands on feel for Kiatsu\, the art 
+ of healing with Ki\, at this 4-session introductory course. The course w
+ ill be held Sundays from 1:00 to 3:30\, on 9/21\, 9/28\, 10/12 and 10/26
+ \, at Float Shoppe in NW Portland. Taught by Cindy Lewis\, a graduate of
+  the OKS Personal Kiatsu School who has been practicing Kiatsu since 200
+ 2. <a href="/downloads/kiatsu_intro_sept_2014.pdf">More information</a>
+SUMMARY:Introduction to Kiatsu&reg\; for personal health
+LOCATION:all dojos
+END:VEVENT
+BEGIN:VEVENT
 DTEND;VALUE=DATE:20140405
 DTSTART;VALUE=DATE:20140405
 DESCRIPTION:1:30\n\nJoin us for Yojimbo (at 1:30) and The Seven Samurai (
