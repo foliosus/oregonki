@@ -172,3 +172,10 @@
     :time: 10:30 am
   - :description: Advanced children's Aikido
     :time: 11:45 am
+  :sunday:
+  - :description: Advanced Aikido
+    :time: 9:30 am
+    :duration: 60
+  - :description: Ki class
+    :time: 11:00 am
+    :duration: 60
