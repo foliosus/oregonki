@@ -325,21 +325,13 @@ SUMMARY:Instructor's class with Tabata Sensei
 LOCATION:Tigard dojo
 END:VEVENT
 BEGIN:VEVENT
-DTEND;VALUE=DATE:20141018
-DTSTART;VALUE=DATE:20141018
-DESCRIPTION:Participate in the Oregon Ki Society's 40th anniversary at a 
- celebratory dinner. Details TBA.
-SUMMARY:40th Anniversary Dinner
-LOCATION:all dojos
-END:VEVENT
-BEGIN:VEVENT
 DTEND;VALUE=DATE:20141019
 DTSTART;VALUE=DATE:20141019
 DESCRIPTION:The workshop will focus on teaching skills for aikido instruc
  tors currently teaching a class\, with feedback from Tabata sensei.  Det
  ails TBA.
 SUMMARY:Instructors' workshop #4
-LOCATION:Tigard dojo
+LOCATION:Eugene dojo
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20141027
