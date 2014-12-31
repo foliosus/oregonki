@@ -104,11 +104,7 @@ function parse_event($values) {
 };
 
 function load_events() {
-	if(empty($_ENV)) {
-		$filename = 'source/events.xml';
-	} else {
-		$filename = 'events.xml';
-	}
+	$filename = 'source/events.xml';
 
 	$events = array();
 
