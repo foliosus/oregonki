@@ -37,11 +37,11 @@ END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20150125
 DTSTART;VALUE=DATE:20150125
-DESCRIPTION:10 am to 2 pm\, with Kiatsu between 11 and noon\n\nAdvanced t
- raining with Tabata Sensei for all instructors\, including an hour of Ki
- atsu practice.
-SUMMARY:Instructor's class with Tabata Sensei
-LOCATION:Tigard dojo
+DESCRIPTION:time TBD\n\nWe invite all students to join us in paying our r
+ espects to Jake Nice Sensei who recently passed away. The memorial servi
+ ce will be followed by a reception
+SUMMARY:Memorial service for Jake Nice Sensei
+LOCATION:Corvallis dojo
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20150209
