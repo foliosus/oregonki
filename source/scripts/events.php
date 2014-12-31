@@ -104,8 +104,13 @@ function parse_event($values) {
 };
 
 function load_events() {
-	$filename = 'source/events.xml';
-
+	if(!empty($_ENV['RBENV_VERSION'])) {
+		// In local dev mode
+		$filename = 'source/events.xml';
+	} else {
+		// On the server
+		$filename = 'events.xml';
+	}
 	$events = array();
 
 	// Read XML
