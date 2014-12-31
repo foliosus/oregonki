@@ -70,11 +70,7 @@ helpers do
   # The middleman-php dev environment has different pathing requirements, so
   # we switch out the path based on where we're running.
   def php_include(filename)
-    if build?
-      "<?php include_once('#{url_for("/scripts/#{filename}", relative: true)}'); ?>"
-    else
-      "<?php include_once('#{url_for("/source/scripts/#{filename}", relative: true)}'); ?>"
-    end
+    "<?php include_once('#{url_for("/scripts/#{filename}", relative: true)}'); ?>"
   end
 
   # -----------------------
