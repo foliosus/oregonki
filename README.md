@@ -1,6 +1,6 @@
 # README
 
-This site requires <a href="https://www.ruby-lang.org/en/">Ruby 2.2.0</a> with the <a href="http://rubygems.org/gems/rake">rake</a> and <a href="http://rubygems.org/gems/bundler">bundler</a> gems installed. It's based on middleman. To get started, assuming you have a working Ruby installation:
+This site requires <a href="https://www.ruby-lang.org/en/">Ruby 2.2.0</a> with the <a href="http://rubygems.org/gems/rake">rake</a> and <a href="http://rubygems.org/gems/bundler">bundler</a> gems installed. It's based on <a href="https://middlemanapp.com/">middleman</a>, a great tool for generating static sites. To get started, assuming you have a working Ruby installation:
 
     bundle install
     bundle exec middleman start
