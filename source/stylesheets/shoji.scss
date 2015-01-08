@@ -696,23 +696,23 @@ cite {
 #primary_content form {
   margin-left: $layout_gutter;
 
+  input, select, textarea {
+    margin-bottom: 1.5em;
+    min-width: 22em;
+  }
+
+  p {
+    margin-left: 0;
+  }
+
   label {
     display: block;
     font-weight: bold;
     margin-bottom: 0;
 
-    input, select {
-      margin-bottom: 1.5em;
-      min-width: 20em;
-    }
-
     strong {
       font-weight: bold;
       color: #900;
-    }
-
-    p {
-      margin-left: 0;
     }
   }
 }
