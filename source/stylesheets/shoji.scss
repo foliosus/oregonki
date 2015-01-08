@@ -695,25 +695,26 @@ cite {
 
 #primary_content form {
   margin-left: $layout_gutter;
-}
 
-form label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 0;
-}
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0;
 
-form input {
-  margin-bottom: 1.5em;
-}
+    input, select {
+      margin-bottom: 1.5em;
+      min-width: 20em;
+    }
 
-form strong {
-  font-weight: bold;
-  color: #900;
-}
+    strong {
+      font-weight: bold;
+      color: #900;
+    }
 
-#primary_content form p {
-  margin-left: 0;
+    p {
+      margin-left: 0;
+    }
+  }
 }
 
 p.notice {

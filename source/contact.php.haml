@@ -27,6 +27,36 @@ meta_description: A contact form to send e-mail to the Oregon Ki Society, a nonp
   $replyemail="info@oregonki.org"; // email address
   // ------------------------------------------------------------
 
+  // Dojo/e-mail map
+  $dojo_emails = array(
+    "Corvallis" => "corvallisdojo@nwkf.org",
+    "Tigard" => "swdojo@nwkf.org",
+    "Eugene" => "eugenedojo@nwkf.org"
+  );
+
+  function reply_email($dojo) {
+    global $dojo_emails;
+    global $replyemail;
+    $email = $dojo_emails[$dojo];
+    if ($email) {
+      return $email;
+    }
+    return $replyemail;
+  }
+
+  function dojo_options($dojo) {
+    global $dojo_emails;
+    $output = '<option value="">General question</option>';
+    foreach ($dojo_emails as $dojo_name => $dojo_email) {
+      $output .= '<option value="' . $dojo_name . '"';
+      if($dojo == $dojo_name) {
+        $output .= ' selected="selected"';
+      }
+      $output .= '>' . $dojo_name . '</option>';
+    }
+    return $output;
+  }
+
   //clean input in case of header injection attempts!
   function clean_input_4email($value, $check_all_patterns = true) {
     $patterns[0] = '/content-type:/i';
@@ -45,7 +75,7 @@ meta_description: A contact form to send e-mail to the Oregon Ki Society, a nonp
 
   function check_email_address($email) {
     // From http://www.ilovejackdaniels.com/php/email-address-validation/
-    
+
     // First, we check that there's one @ symbol, and that the lengths are right
     if (!ereg("^[^@]{1,64}@[^@]{1,255}$", $email)) {
       // Email invalid because wrong number of characters in one section, or wrong number of @ symbols.
@@ -77,7 +107,12 @@ meta_description: A contact form to send e-mail to the Oregon Ki Society, a nonp
   $email1 = '';
   $email2 = '';
   $thesubject = '';
+  $dojo = '';
   $themessage = '';
+
+  if (!empty ($_GET["dojo"])) {
+    $dojo = clean_input_4email($_GET["dojo"]);
+  }
 
   if (isset($_POST["submit"])) {
 
@@ -93,6 +128,9 @@ meta_description: A contact form to send e-mail to the Oregon Ki Society, a nonp
     if (!empty ($_POST["thesubject"])) {
       $thesubject = clean_input_4email($_POST["thesubject"]);
     };
+    if (!empty ($_POST["dojo"])) {
+      $dojo = clean_input_4email($_POST["dojo"]);
+    }
     if (!empty ($_POST["themessage"])) {
       $themessage = clean_input_4email($_POST["themessage"], false);
     };
@@ -129,18 +167,18 @@ meta_description: A contact form to send e-mail to the Oregon Ki Society, a nonp
 
   -- Oregon Ki Society';
 
-            mail($replyemail,
+            mail(reply_email($dojo),
                "[oregonki.org] " . stripslashes($thesubject),
                "Message from " . stripslashes($name). " through oregonki.org:
 
   " . stripslashes($themessage),
-               "From: " . $replyemail . "
+               "From: " . reply_email($dojo) . "
   Reply-To: " . $email1);
             mail($email1,
                "Receipt: " . stripslashes($thesubject),
                stripslashes($replymessage),
-               "From: " . $replyemail . "
-  Reply-To: " . $replyemail);
+               "From: " . reply_email($dojo) . "
+  Reply-To: " . reply_email($dojo));
             echo $success_sent_msg;
             $message_sent = true;
             unset($name, $email1, $email2, $thesubject, $themessage);
@@ -180,6 +218,7 @@ meta_description: A contact form to send e-mail to the Oregon Ki Society, a nonp
             <label for="email1"<?php if (strpos($flag, "email1") !== false) { print " class=\"error\""; }; ?>><strong>*</strong>E-mail:</label><input size="30" maxlength="80" name="email1" id="email1" value="<?php print stripslashes($email1); ?>"<?php if (strpos($flag, "email1") !== false) { print " class=\"error\""; }; ?> />
             <label for="email2"<?php if ((strpos($flag, "email2") !== false)) { print " class=\"error\""; }; ?>><strong>*</strong>Confirm e-mail:</label><input size="30" maxlength="80" name="email2" id="email2" value="<?php print stripslashes($email2); ?>"<?php if (strpos($flag, "email2") !== false) { print " class=\"error\""; }; ?> />
             <label for="thesubject"<?php if (strpos($flag, "subject") !== false) { print " class=\"error\""; }; ?>>Subject:</label><input size="30" maxlength="100" name="thesubject" id="thesubject" value="<?php print stripslashes($thesubject); ?>"<?php if (strpos($flag, "thesubject") !== false) { print " class=\"error\""; }; ?> />
+            <label for="dojo"<?php if (strpos($flag, "dojo") !== false) { print " class=\"error\""; }; ?>>Dojo:</label><select name="dojo" id="dojo"><?php print dojo_options($dojo); ?></select><?php if (strpos($flag, "dojo") !== false) { print " class=\"error\""; }; ?>
             <label for="themessage"<?php if (strpos($flag, "message") !== false) { print " class=\"error\""; }; ?>><strong>*</strong>Your message:</label><textarea name="themessage" id="themessage" rows="7" cols="30"<?php if (strpos($flag, "themessage") !== false) { print " class=\"error\""; }; ?>><?php print stripslashes($themessage); ?></textarea>
             <label for="submit">Send it:</label><input type="submit" name="submit" id="submit" value="Send" />
         </form>
