@@ -472,142 +472,169 @@ cite {
 /* Home page         */
 /* ================= */
 
-.index #primary_content {
-  position: relative;
-  margin-top: 118px;
-  min-height: 10em;
+.index {
+  #primary_content {
+    position: relative;
+    margin-top: 118px;
+    min-height: 10em;
+  }
+
+  #navigation {
+    margin-top: 118px;
+    border-bottom: none;
+  }
+
+  #primary_content blockquote.motto {
+    position: absolute;
+    top: -118px;
+    right: -60px;
+    width: 840px;
+    height: 118px;
+    background: #fff url(/images/shoji/index_motto.png) top center no-repeat;
+    text-indent: -9999em;
+    margin: 0 $layout_gutter;
+  }
+
+  .blocked_announcement {
+    position: relative;
+    border-top: 2px solid #000;
+    padding-top: 1.5em;
+
+    img {
+      border: 1px solid #000 !important;
+    }
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      width: 20px;
+      height: 0;
+      border-top: 2px solid #000;
+      position: absolute;
+      top: -2px;
+      right: -20px;
+    }
+  }
+
+  .motto p {
+    margin: 0
+  }
+
+  #primary_content img {
+    border: none;
+  }
+
+  #secondary_content {
+    float: left;
+    display: inline; /* BUG FIX: prevent IE6 double-margin float bug */
+    clear: both;
+    margin: 1.5em $layout_gutter 0;
+    width: 840px;
+    background: #fff url(/images/shoji/index_secondary_content_background.png) center repeat-y;
+    border: none;
+    position: relative;
+  }
+
+  /* Fix IE rendering bug */
+  * html & #secondary_content {
+    clear: none
+  }
+
+  #highlights {
+    list-style-type: none;
+    margin: 0 0 3em;
+    padding: 0 $layout_gutter;
+    border: 2px solid #000;
+    border-left: none;
+    border-right: none;
+    background: transparent url(/images/shoji/index_highlights_background.png) center repeat-y;
+    float: left;
+    clear: both;
+    display: inline; /* BUG FIX: prevent IE6 double-margin float bug */
+
+    li {
+      float: left;
+      display: inline; /* BUG FIX: prevent IE6 double-margin float bug */
+      width: 180px;
+      padding: 0 10px;
+
+      ul {
+        list-style-type: none;
+        margin: 0 10px 1.5em;
+        padding: 0;
+      }
+
+      li {
+        float: none;
+        display: block;
+        width: auto;
+        padding: 0;
+        border: none;
+      }
+    }
+
+    .date {
+      display: block;
+      margin-bottom: 1.5em;
+    }
+  }
+
+  * html & #highlights .date {
+    margin-bottom: 0;
+  }
+
+  #amazon_banner { margin-top: $layout_gutter; }
+  #amazon_banner img { border: none; }
+
+  #secondary_content img {
+    float: none;
+    display: block;
+    clear: both;
+    margin: 0;
+    position: relative;
+    left: 50%;
+    margin-left: -380px;
+  }
+
+  #footer {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-top: none;
+    border-bottom: none;
+    margin: 0 40px 0 38px;
+    padding: 30px 0 25px;
+    background-position: 635px 30px;
+  }
+
+  #footer p {
+    margin: 0 170px;
+  }
+
+  #flyout {
+    position: absolute;
+    top: 0;
+    right: -10em;
+    width: 22em;
+    padding-right: $layout_gutter;
+    padding-bottom: 1.5em;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    -o-transform: rotate(7deg);
+    -ms-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+  }
+  #flyout p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
 }
 
-.index #navigation {
-  margin-top: 118px;
-  border-bottom: none;
-}
-
-.index #primary_content blockquote.motto {
-  position: absolute;
-  top: -118px;
-  right: -60px;
-  width: 840px;
-  height: 118px;
-  background: #fff url(/images/shoji/index_motto.png) top center no-repeat;
-  text-indent: -9999em;
-  margin: 0 $layout_gutter;
-}
-
-.index .motto p {
-  margin: 0
-}
-
-.index #primary_content img {
-  border: none;
-}
-
-.index #secondary_content {
-  float: left;
-  display: inline; /* BUG FIX: prevent IE6 double-margin float bug */
-  clear: both;
-  margin: 1.5em $layout_gutter 0;
-  width: 840px;
-  background: #fff url(/images/shoji/index_secondary_content_background.png) center repeat-y;
-  border: none;
-  position: relative;
-}
-
-/* Fix IE rendering bug */
-* html .index #secondary_content {
-  clear: none
-}
-
-.index #highlights {
-  list-style-type: none;
-  margin: 0 0 3em;
-  padding: 0 $layout_gutter;
-  border: 2px solid #000;
-  border-left: none;
-  border-right: none;
-  background: transparent url(/images/shoji/index_highlights_background.png) center repeat-y;
-  float: left;
-  clear: both;
-  display: inline; /* BUG FIX: prevent IE6 double-margin float bug */
-}
-
-.index #highlights li {
-  float: left;
-  display: inline; /* BUG FIX: prevent IE6 double-margin float bug */
-  width: 180px;
-  padding: 0 10px;
-}
-
-.index #highlights li ul {
-  list-style-type: none;
-  margin: 0 10px 1.5em;
-  padding: 0;
-}
-
-.index #highlights li li {
-  float: none;
-  display: block;
-  width: auto;
-  padding: 0;
-  border: none;
-}
-
-.index #highlights .date {
-  display: block;
-  margin-bottom: 1.5em;
-}
-
-* html .index #highlights .date {
-  margin-bottom: 0;
-}
-
-.index #amazon_banner { margin-top: $layout_gutter; }
-.index #amazon_banner img { border: none; }
-
-.index #secondary_content img {
-  float: none;
-  display: block;
-  clear: both;
-  margin: 0;
-  position: relative;
-  left: 50%;
-  margin-left: -380px;
-}
-
-.index #footer {
-  background-color: #fff;
-  border: 2px solid #000;
-  border-top: none;
-  border-bottom: none;
-  margin: 0 40px 0 38px;
-  padding: 30px 0 25px;
-  background-position: 635px 30px;
-}
-
-.index #footer p {
-  margin: 0 170px;
-}
-
-.index #flyout {
-  position: absolute;
-  top: 0;
-  right: -10em;
-  width: 22em;
-  padding-right: $layout_gutter;
-  padding-bottom: 1.5em;
-  background: #fff;
-  border: 2px solid #000;
-  border-radius: 5px;
-  -o-transform: rotate(7deg);
-  -ms-transform: rotate(7deg);
-  -moz-transform: rotate(7deg);
-  -webkit-transform: rotate(7deg);
-  transform: rotate(7deg);
-}
-.index #flyout p {
-  font-size: 12px;
-  margin-bottom: 0;
-}
 
 /* ================= */
 /* Photo galleries   */
